@@ -7,19 +7,15 @@
     object-fit: cover;
     filter: brightness(0.8);
 }
-
-.bannerContainer {
-    position:relative;    
-}
 .navbar {
     position:absolute;
-    top:30px;
+    top:0px;
     z-index:80;
     width:100%;
-    margin-bottom: 50px;
-}
-.navbar-nav{
-    margin-right: 150px;
+    padding-right: 5%;
+    background-color: #1c2120;
+    opacity: 80%;
+
 }
 .my-carousel{
     position:absolute;
