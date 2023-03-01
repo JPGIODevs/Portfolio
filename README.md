@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+* Ruby version : 3.2.0
 
-* Ruby version
-
-* System dependencies
+* System dependencies : Rails 7.0.4.2 
 
 * Configuration
 
-* Database creation
+* Database : Not-in-use [// small static portfolio for now :) //]
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* Will soon be deployed to web
 
 * ...
