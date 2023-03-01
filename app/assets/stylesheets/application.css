@@ -1,25 +1,32 @@
 .c-item{
     height: 750px;
 }
-
 .c-img{
     height: 100%;
     object-fit: cover;
     filter: brightness(0.8);
 }
-.navbar {
-    position:absolute;
-    top:0px;
-    z-index:80;
-    width:100%;
-    padding-right: 5%;
-    background-color: #1c2120;
-    opacity: 80%;
-
+.c-headone{
+    font-size: 50px;
+    text-align: center;
+    
 }
 .my-carousel{
     position:absolute;
     top:0; 
     width:100%; 
     margin-left: -75px;
+}
+.resume-button{
+    margin-top: 5;
+    font-size: larger;
+}
+.navbar {
+    position:absolute;
+    top:0;
+    z-index:80;
+    width:100%;
+    padding-right: 5%;
+    background-color: #1c2120;
+    opacity: 90%;
 }
