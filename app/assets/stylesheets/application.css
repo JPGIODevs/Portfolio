@@ -1,9 +1,29 @@
 .c-item{
-    height: 480px;
+    height: 750px;
 }
 
 .c-img{
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.6);
+    filter: brightness(0.8);
+}
+
+.bannerContainer {
+    position:relative;    
+}
+.navbar {
+    position:absolute;
+    top:30px;
+    z-index:80;
+    width:100%;
+    margin-bottom: 50px;
+}
+.navbar-nav{
+    margin-right: 150px;
+}
+.my-carousel{
+    position:absolute;
+    top:0; 
+    width:100%; 
+    margin-left: -75px;
 }
