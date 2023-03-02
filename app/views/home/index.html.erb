@@ -1,4 +1,4 @@
-<div id="carouselExampleCaptions" class="carousel slide carousel-fade my-carousel">
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade shadow-lg my-carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -9,7 +9,9 @@
       <div class="carousel-caption top-50 d-none d-md-block">
         <h1>First-class Experience with <b>AppDev, WebDev & Devops</b></h1>
         <p>Utilising the <i>Perfect Cocktail</i> of Technologies to provide value to Customers & Employers alike!</p>
-        <button type="button" class="btn mt-5 btn-outline-light resume-button">Download Resume</button>
+        <%= link_to home_resume_path do %>
+          <button type="button" class="btn mt-5 btn-outline-light resume-button">Download Resume</button>
+        <% end%>
       </div>
     </div>
     <div class="carousel-inner shadow-4-strong">
@@ -18,16 +20,18 @@
       <div class="carousel-caption top-50 d-none d-md-block">
         <h1><b>Passion</b> in modern technology</h1>
         <p>Heavily invested into future technologies such as <i>Rust, Svelte, Tauri, SurrealDB</i></p>
-        <button type="button" class="btn mt-5 btn-outline-light resume-button">Download Resume</button>
-      </div>
+        <%= link_to home_resume_path do %>
+          <button type="button" class="btn mt-5 btn-outline-light resume-button">Download Resume</button>
+        <% end%></div>
     </div>
     <div class="carousel-item c-item">
       <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" class="d-block w-100 c-img" alt="slide3">
       <div class="carousel-caption top-50 d-none d-md-block">
         <h1>Delivering something thats <b>Works!</b></h1>
         <p>Utilising existing technologies with mature codebases to develop products that <i>work!</i></p>
-        <button type="button" class="btn mt-5 btn-outline-light resume-button">Download Resume</button>
-      </div>
+        <%= link_to home_resume_path do %>
+          <button type="button" class="btn mt-5 btn-outline-light resume-button">Download Resume</button>
+        <% end%></div>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -40,11 +44,8 @@
   </button>
 </div>
 
-<br>
-
-<div class='container'>
-  <h1 class="py-5">Home</h1>
-  <hr>
-  <p>Finally feel like im doing something!</p>
-  <p>Find me in app/views/home/index.html.erb</p>
+<div class='container' style="color:white;padding-top:60%">
+  <h1 style="text-align:center;font-size:50px;">My Expertise</h1>
+  <br>
+  <img src="/assets/expertise.png" class="expertise-img shadow" alt="expertise image">
 </div>

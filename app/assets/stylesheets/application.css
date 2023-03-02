@@ -1,25 +1,3 @@
-.c-item{
-    height: 750px;
-}
-.c-img{
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.8);
-}
-.c-headone{
-    font-size: 50px;
-    text-align: center;
-}
-.my-carousel{
-    position:absolute;
-    top:0; 
-    width:100%; 
-    margin-left: -75px;
-}
-.resume-button{
-    margin-top: 5;
-    font-size: larger;
-}
 .navbar {
     position:absolute;
     top:0;
@@ -28,4 +6,29 @@
     padding-right: 5%;
     background-color: #1c2120;
     opacity: 90%;
+}
+.c-item{
+    height: 100vh;
+}
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+.my-carousel{
+    position:absolute;
+    top:0; 
+    width:100%; 
+    margin-left: -72px;
+}
+.resume-button{
+    margin-top: 5;
+    font-size: larger;
+}
+.expertise-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    height: 80%;
 }
