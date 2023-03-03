@@ -4,14 +4,31 @@ p {
 h1{
     color: white;
 }
+.custom-shape-divider-top-1677853189 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 81;
+}
+.custom-shape-divider-top-1677853189 svg {
+    position: relative;
+    display: block;
+    width: calc(112% + 1.3px);
+    height: 174px;
+    transform: rotateY(180deg);
+    opacity: 60%;
+}
+.custom-shape-divider-top-1677853189 .shape-fill {
+    fill: #000000;
+}
 .navbar {
     position:absolute;
     top:0;
     z-index:80;
     width:100%;
-    padding-right: 5%;
-    background-color: #1c2120;
-    opacity: 90%;
 }
 .c-item{
     height: 100vh;
@@ -31,6 +48,7 @@ h1{
 }
 .resume-button{
     margin-top: 150px;
+    margin-bottom: 20px;
     font-size: larger;
 }
 .expertise-img {
