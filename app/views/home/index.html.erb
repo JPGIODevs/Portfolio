@@ -7,10 +7,10 @@
     <div class="carousel-item active c-item">
       <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1806&q=80" class="d-block w-100 c-img" alt="slide2">
       <div class="carousel-caption top-50 d-none d-md-block">
-        <h1>First-class Experience with <b>AppDev, WebDev & Devops</b></h1>
-        <p>Utilising the <i>Perfect Cocktail</i> of Technologies to provide value to Customers & Employers alike!</p>
+        <h1 class="mb-3">First-class Experience with <b>AppDev, WebDev & Devops</b></h1>
+        <p class="font-monospace">Utilising the <i>Perfect Cocktail</i> of Technologies to provide value to Customers & Employers alike!</p>
         <%= link_to home_resume_path do %>
-          <button type="button" class="btn mt-5 btn-outline-light resume-button">Download Resume</button>
+          <button type="button" class="btn btn-outline-light shadow resume-button">Download Resume</button>
         <% end%>
       </div>
     </div>
@@ -18,19 +18,19 @@
     <div class="carousel-item c-item">
       <img src="assets/background-static.jpg" class="d-block w-100 c-img" alt="slide1">
       <div class="carousel-caption top-50 d-none d-md-block">
-        <h1><b>Passion</b> in modern technology</h1>
-        <p>Heavily invested into future technologies such as <i>Rust, Svelte, Tauri, SurrealDB</i></p>
+        <h1 class="mb-3"><b>Passion</b> in modern technology</h1>
+        <p class="font-monospace">Heavily invested into future technologies such as <i>Rust, Svelte, Tauri, SurrealDB</i></p>
         <%= link_to home_resume_path do %>
-          <button type="button" class="btn mt-5 btn-outline-light resume-button">Download Resume</button>
+          <button type="button" class="btn btn-outline-light shadow resume-button">Download Resume</button>
         <% end%></div>
     </div>
     <div class="carousel-item c-item">
-      <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" class="d-block w-100 c-img" alt="slide3">
-      <div class="carousel-caption top-50 d-none d-md-block">
-        <h1>Delivering something thats <b>Works!</b></h1>
-        <p>Utilising existing technologies with mature codebases to develop products that <i>work!</i></p>
+      <img src="https://images.unsplash.com/photo-1617042375876-a13e36732a04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="d-block w-100 c-img" alt="slide3">
+      <div class="carousel-caption top-50 d-none d-md-block shadow-lg">
+        <h1 class="mb-3">Delivering solutions that just <b>Work!</b></h1>
+        <p class="font-monospace">Utilising existing technologies with mature codebases (Rails, C, MySQL & More) to develop products that <i>work!</i></p>
         <%= link_to home_resume_path do %>
-          <button type="button" class="btn mt-5 btn-outline-light resume-button">Download Resume</button>
+          <button type="button" class="btn btn-outline-light shadow resume-button">Download Resume</button>
         <% end%></div>
     </div>
   </div>
@@ -44,8 +44,43 @@
   </button>
 </div>
 
-<div class='container' style="color:white;padding-top:60%">
+<div class='container' style="color:white;padding-top:70%">
   <h1 style="text-align:center;font-size:50px;">My Expertise</h1>
-  <br>
+  <br/>
   <img src="/assets/expertise.png" class="expertise-img shadow" alt="expertise image">
+  <br/>
+</div>
+
+<div class="container">
+  <h1 style="text-align:center;font-size:50px;">Projects</h1>
+</div>
+
+<div class="row row-cols-3 row-cols-md-3 g-4 p-5">
+  <div class="col">
+    <div class="card bg-dark border-secondary">
+      <img src="https://pbs.twimg.com/media/CZGHPChUAAA3jqE.png:large" class="card-img-top" alt="rails">
+      <div class="card-body">
+        <h5 class="card-title card-header"><b>Rails Portfolio</b></h5>
+        <p class="card-text">A ruby-on-rails portfolio, integrating <b>SQLite3</b> and <b>Bootstrap 5</b> to create a response, reactive & scalable personal portfolio.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card bg-dark border-secondary">
+      <img src="https://cdn.worldvectorlogo.com/logos/tauri-1.svg" class="card-img-top" alt="tauri">
+      <div class="card-body">
+        <h5 class="card-title card-header">Tauri App</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card bg-dark border-secondary">
+      <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png" class="card-img-top w-90% h-90%" alt="python">
+      <div class="card-body">
+        <h5 class="card-title card-header">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
 </div>
