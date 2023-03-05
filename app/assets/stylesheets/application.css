@@ -68,14 +68,12 @@ h1{
     line-height: 0;
     z-index: 11;
 }
-
 .caro-shape svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 65px;
 }
-
 .caro-shape .shape-fill {
     fill: #000000;
 }
