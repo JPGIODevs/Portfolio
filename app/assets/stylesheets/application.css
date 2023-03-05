@@ -61,12 +61,13 @@ h1{
 }
 .caro-shape {
     position: absolute;
-    top: 0;
     left: 0;
+    top:95.5vh;
     width: 100%;
     overflow: hidden;
     line-height: 0;
     z-index: 11;
+    opacity: 5%;
 }
 .caro-shape svg {
     position: relative;
@@ -75,7 +76,7 @@ h1{
     height: 65px;
 }
 .caro-shape .shape-fill {
-    fill: #000000;
+    fill: #8b8b8b;
 }
 .resume-button{
     top: 80vh;
