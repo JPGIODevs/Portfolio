@@ -1,5 +1,5 @@
 body {
-	background: linear-gradient(#000000, #1a1a1a);
+	background: linear-gradient(0deg, #000000, #1a1a1a);
 	background-size: cover;
     background-repeat: no-repeat;
 	height: 100%;
@@ -51,7 +51,7 @@ footer{
     line-height: 0;
     transform: rotate(180deg);
     z-index: 11;
-    opacity: 60%;
+    opacity: 20%;
 }
 
 .footer-shape svg {
@@ -63,7 +63,7 @@ footer{
 }
 
 .footer-shape .shape-fill {
-    fill: #000000;
+    fill: #ffffff;
 }
 .navbar {
     position:absolute;
