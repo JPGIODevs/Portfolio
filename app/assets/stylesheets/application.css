@@ -10,6 +10,12 @@ p {
 h1{
     color: white;
 }
+footer{
+    padding-top: 20%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
 .python-pill{
     background-color: rgb(98, 0, 255);
 }
@@ -34,6 +40,29 @@ h1{
     opacity: 60%;
 }
 .top-shape .shape-fill {
+    fill: #000000;
+}
+.footer-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 11;
+    opacity: 60%;
+}
+
+.footer-shape svg {
+    position: relative;
+    bottom: 0;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 242px;
+}
+
+.footer-shape .shape-fill {
     fill: #000000;
 }
 .navbar {
@@ -67,7 +96,7 @@ h1{
     overflow: hidden;
     line-height: 0;
     z-index: 11;
-    opacity: 5%;
+    opacity: 15%;
 }
 .caro-shape svg {
     position: relative;
