@@ -88,10 +88,15 @@ footer{
     margin-right: auto;
     padding-bottom: 3;
 }
+.resume-button{
+    //top: 80vh;
+    margin-bottom: 20px;
+    font-size: larger;
+}
 .caro-shape {
     position: absolute;
     left: 0;
-    top:95.5vh;
+    top:100vh;
     width: 100%;
     overflow: hidden;
     line-height: 0;
@@ -107,11 +112,6 @@ footer{
 .caro-shape .shape-fill {
     fill: #8b8b8b;
 }
-.resume-button{
-    top: 80vh;
-    margin-bottom: 20px;
-    font-size: larger;
-}
 .expertise-img {
     display: block;
     margin-left: auto;
@@ -126,4 +126,13 @@ footer{
 }
 .sent-div{
     height: 45.5vh;
+}
+.contact-icon-row{
+    display: flex;
+}
+.contact-icon-col{
+    flex: 33.3335;
+}
+.form-cont{
+    top:20vh;
 }
