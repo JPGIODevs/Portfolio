@@ -1,7 +1,6 @@
 body {
-	background: linear-gradient(0deg, #000000, #1a1a1a);
+    background-color: #000000;
 	background-size: cover;
-    background-repeat: no-repeat;
 	height: 100%;
 }
 p {
@@ -89,9 +88,8 @@ footer{
     padding-bottom: 3;
 }
 .resume-button{
-    //top: 80vh;
-    margin-bottom: 20px;
     font-size: larger;
+    position: relative;
 }
 .caro-shape {
     position: absolute;
@@ -126,8 +124,6 @@ footer{
 }
 .icon-wrapper{
     text-align: center;
-    margin: auto;
-
 }
 .contacts-icon{
     filter: invert(1);
