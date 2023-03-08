@@ -124,15 +124,15 @@ footer{
     color: white;
     font-family: monospace;
 }
-.sent-div{
-    height: 45.5vh;
+.icon-wrapper{
+    text-align: center;
+    margin: auto;
+
 }
-.contact-icon-row{
-    display: flex;
-}
-.contact-icon-col{
-    flex: 33.3335;
-}
-.form-cont{
-    top:20vh;
+.contacts-icon{
+    filter: invert(1);
+    height: 8%;
+    width: 8%;
+    padding-left: 25px;
+    padding-right: 25px;
 }
