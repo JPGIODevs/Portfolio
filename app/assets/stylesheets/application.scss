@@ -2,6 +2,7 @@ body {
     background-color: #131313;
 	background-size: cover;
 	height: 100%;
+    width: 100%;
 }
 p {
     color: white;
@@ -18,8 +19,9 @@ footer{
 .hidden{
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-100%);
     transition: all 1s;
+    //transform: translateX(0);
+
 }
 @media(prefers-reduced-motion){
     .hidden{
@@ -106,6 +108,10 @@ footer{
 .resume-button{
     font-size: larger;
     position: relative;
+    transition: transform 250ms;
+}
+.resume-button:hover{
+    transform: translateY(5px);
 }
 .caro-shape {
     position: absolute;
@@ -133,7 +139,6 @@ footer{
 }
 .about-img{
     position: absolute;
-    left: 10%;
     width: 30vw;
     height: 50vh;
     object-fit: cover;
@@ -151,6 +156,18 @@ footer{
 .card-header{
     color: white;
     font-family: monospace;
+}
+.card:nth-child(2){
+    transition-delay: 200ms;
+}
+.card:nth-child(3){
+    transition-delay: 400ms;
+}
+.card:nth-child(4){
+    transition-delay: 600ms;
+}
+.card:nth-child(5){
+    transition-delay: 800ms;
 }
 .icon-wrapper{
     text-align: center;
