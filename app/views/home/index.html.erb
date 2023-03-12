@@ -9,8 +9,8 @@
     <div class="carousel-item active c-item">
       <img src="assets/caro1.avif" class="d-block w-100 c-img" alt="slide1">
       <div class="carousel-caption top-50 d-none d-md-block">
-        <h1 class="mb-3">First-class Experience with <b>AppDev, WebDev & DevOps</b></h1>
-        <p class="font-monospace">Satisfying Customers & Employers alike with <i>reliable, fast & scalable</i> solutions!</p>
+        <h1 class="mb-3 caro-text">First-class Experience with <b>AppDev, WebDev & DevOps</b></h1>
+        <p class="font-monospace caro-text">Satisfying Customers & Employers alike with <i>reliable, fast & scalable</i> solutions!</p>
         <%= link_to home_resume_path do %>
           <button type="button" class="btn btn-outline-light shadow resume-button">Download Resume</button>
         <% end%>
@@ -21,8 +21,8 @@
     <div class="carousel-item c-item">
       <img src="assets/caro2.png" class="d-block w-100 c-img" alt="slide2">
       <div class="carousel-caption top-50 d-none d-md-block">
-        <h1 class="mb-3"><b>Passion</b> in modern technology</h1>
-        <p class="font-monospace">Heavily invested into future technologies such as <i>Rust, Svelte, Pocketbase, SurrealDB</i> & more!</p>
+        <h1 class="mb-3 caro-text"><b>Passion</b> in modern technology</h1>
+        <p class="font-monospace caro-text">Heavily invested into future technologies such as <i>Rust, Svelte, Pocketbase, SurrealDB</i> & more!</p>
         <%= link_to home_resume_path do %>
           <button type="button" class="btn btn-outline-light shadow resume-button">Download Resume</button>
         <% end%></div>
@@ -31,8 +31,8 @@
     <div class="carousel-item c-item">
       <img src="assets/caro3.avif" class="d-block w-100 c-img" alt="slide3">
       <div class="carousel-caption top-50 d-none d-md-block shadow-lg">
-        <h1 class="mb-3">Delivering solutions that just <b>Work!</b></h1>
-        <p class="font-monospace">Utilising existing technologies with mature codebases (Rails, C, MySQL & More) to develop products that <i>work reliably!</i></p>
+        <h1 class="mb-3 caro-text">Delivering solutions that just <b>Work!</b></h1>
+        <p class="font-monospace caro-text">Utilising existing technologies with mature codebases (Rails, C, MySQL & More) to develop products that <i>work reliably!</i></p>
         <br/>
         <%= link_to home_resume_path do %>
           <button type="button" class="btn btn-outline-light shadow resume-button pt-3 mt-3">Download Resume</button>
@@ -84,15 +84,20 @@
 </div>
 
 <!-- EXPERTISE SECTION -->
-<div class='container' style="padding-top:10%">
+<div class='container pt-5'>
   <h1 style="text-align:center;font-size:50px;">Expertise</h1>
   <br/>
   <ul class="nav justify-content-center">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">All</a>
+    <!-- <a class="nav-link active" aria-current="page" href="#" style="color:white;">All</a> -->
+    <%= turbo_frame_tag "expertise" do %>
+      <%= link_to "All", "home/expertise", data: { turbo_frame: "all"}, class: "nav-link" %>
+    <% end %>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">WebDev</a>
+    <%= turbo_frame_tag "expertise" do %>
+      <%= link_to "WebDev", "home/expertise", data: { turbo_frame: "all"}, class: "nav-link" %>
+    <% end %>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">AppDev</a>
@@ -102,6 +107,11 @@
   </li>
 </ul>
 </div>
+<%= turbo_frame_tag "all" do %>
+  <div class="container expertise-frame">
+    <p>nothing here yet</p>
+  </div>
+<% end %>
 
 <!-- PROJECTS SECTION -->
 <div class="container" style="padding-top:10%">

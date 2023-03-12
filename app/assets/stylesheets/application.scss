@@ -105,8 +105,12 @@ footer{
     margin-right: auto;
     padding-bottom: 3;
 }
+.caro-text{
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
 .resume-button{
     font-size: larger;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
     position: relative;
     transition: transform 250ms;
 }
@@ -145,14 +149,6 @@ footer{
     object-position: 80% 20%;
     margin-right: 0;
 }
-.expertise-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-    width:80%;
-    height: 80%;
-}
 .card-header{
     color: white;
     font-family: monospace;
@@ -178,4 +174,8 @@ footer{
     width: 8%;
     padding-left: 25px;
     padding-right: 25px;
+}
+.expertise-frame{
+    padding: 5% 5%;
+    text-align: center;
 }
