@@ -60,9 +60,13 @@
     </svg>
 </div>
 
-<!-- ABOUT ME SECTION -->
+<!-- hackiest way of getting around absolute elements -->
+<div style="padding-top:60%;">
+  <br/>
+</div>
 
-<div class="container hidden about"  style="padding-top:70%">
+<!-- ABOUT ME SECTION -->
+<div class="container hidden about">
   <h1 style="text-align:center;font-size:50px;">About me</h1>
   <div class='row' style="padding-top:5%;padding-bottom:5%;">
     <div class="col">
@@ -89,27 +93,67 @@
   <br/>
   <ul class="nav justify-content-center">
   <li class="nav-item">
-    <!-- <a class="nav-link active" aria-current="page" href="#" style="color:white;">All</a> -->
     <%= turbo_frame_tag "expertise" do %>
       <%= link_to "All", "home/expertise", data: { turbo_frame: "all"}, class: "nav-link" %>
     <% end %>
   </li>
   <li class="nav-item">
     <%= turbo_frame_tag "expertise" do %>
-      <%= link_to "WebDev", "home/expertise", data: { turbo_frame: "all"}, class: "nav-link" %>
+      <%= link_to "WebDev", "home/expertise", data: { turbo_frame: "webdev"}, class: "nav-link" %>
     <% end %>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">AppDev</a>
+    <%= turbo_frame_tag "expertise" do %>
+      <%= link_to "AppDev", "home/expertise", data: { turbo_frame: "appdev"}, class: "nav-link" %>
+    <% end %>
   </li>
   <li class="nav-item">
-    <a class="nav-link">Databases</a>
+    <%= turbo_frame_tag "expertise" do %>
+      <%= link_to "Databases", "home/expertise", data: { turbo_frame: "databases"}, class: "nav-link" %>
+    <% end %>
   </li>
 </ul>
 </div>
 <%= turbo_frame_tag "all" do %>
+  <div class="row row-cols-6 align-items-center g-2 pt-3 mt-4">
+    <div class="col">
+      <img src="assets/icon.png" class="expertise-icon">
+    </div>
+
+    <div class="col">
+      <img src="assets/icon.png" class="expertise-icon">
+    </div>
+
+    <div class="col">
+      <img src="assets/icon.png" class="expertise-icon">
+    </div>
+
+    <div class="col">
+      <img src="assets/icon.png" class="expertise-icon">
+    </div>
+
+    <div class="col">
+      <img src="assets/icon.png" class="expertise-icon">
+    </div>
+
+    <div class="col">
+      <img src="assets/icon.png" class="expertise-icon">
+    </div>
+  </div>
+<% end %>
+<%= turbo_frame_tag "webdev" do %>
   <div class="container expertise-frame">
-    <p>nothing here yet</p>
+    <p>image table contents webdev</p>
+  </div>
+<% end %>
+<%= turbo_frame_tag "appdev" do %>
+  <div class="container expertise-frame">
+    <p>image table contents appdev</p>
+  </div>
+<% end %>
+<%= turbo_frame_tag "databases" do %>
+  <div class="container expertise-frame">
+    <p>image table contents databases</p>
   </div>
 <% end %>
 

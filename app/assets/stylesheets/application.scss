@@ -20,8 +20,6 @@ footer{
     opacity: 0;
     filter: blur(5px);
     transition: all 1s;
-    //transform: translateX(0);
-
 }
 @media(prefers-reduced-motion){
     .hidden{
@@ -31,7 +29,6 @@ footer{
 .show{
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0);
 }
 .python-pill{
     background-color: rgb(98, 0, 255);
@@ -116,6 +113,7 @@ footer{
 }
 .resume-button:hover{
     transform: translateY(5px);
+    text-shadow: none;
 }
 .caro-shape {
     position: absolute;
@@ -149,21 +147,16 @@ footer{
     object-position: 80% 20%;
     margin-right: 0;
 }
+.expertise-icon{
+    object-fit: fill;
+    width: 50%;
+}
 .card-header{
     color: white;
     font-family: monospace;
 }
 .card:nth-child(2){
     transition-delay: 200ms;
-}
-.card:nth-child(3){
-    transition-delay: 400ms;
-}
-.card:nth-child(4){
-    transition-delay: 600ms;
-}
-.card:nth-child(5){
-    transition-delay: 800ms;
 }
 .icon-wrapper{
     text-align: center;
