@@ -19,7 +19,25 @@ footer{
 .hidden{
     opacity: 0;
     filter: blur(5px);
-    transition: all 1s;
+    transition: opacity, filter 1s;
+}
+.hidden.left-slide{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: opacity, transform 0.5s, filter 1s;
+}
+.hidden.right-slide{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: opacity, transform 0.5s, filter 1s;
+}
+.hidden.top-slide{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: opacity, transform 0.5s, filter 1s;
 }
 @media(prefers-reduced-motion){
     .hidden{
@@ -29,6 +47,21 @@ footer{
 .show{
     opacity: 1;
     filter: blur(0);
+}
+.show.left-slide{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.show.right-slide{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.show.top-slide{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
 }
 .python-pill{
     background-color: rgb(98, 0, 255);
@@ -147,9 +180,15 @@ footer{
     object-position: 80% 20%;
     margin-right: 0;
 }
+.expertise-container{
+    padding-top: 25vh;
+}
+.expertise{
+    text-align: center;
+    border: 2px solid white;
+}
 .expertise-icon{
-    object-fit: fill;
-    width: 50%;
+    width: 30%;
 }
 .card-header{
     color: white;
@@ -171,4 +210,19 @@ footer{
 .expertise-frame{
     padding: 5% 5%;
     text-align: center;
+}
+@mixin chunky-underline($color, $block: false, $size: 20%, $position: 0%) {
+    background-image: linear-gradient(
+      transparent 0%,
+      transparent (100% - $size - $position),
+      $color  (100% - $size - $position),
+      $color (100% - $position),
+      transparent (100% - $position),
+      transparent
+    );
+}
+.chonky{
+    @include chunky-underline(blue, true, 25%, 10%);
+    display: inline;
+    text-align: left;
 }

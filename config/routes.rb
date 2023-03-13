@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   get 'home/about'
   get 'home/resume'
   get 'home/contacts'
-  get 'home/expertise'
   #get 'blog/'
   #get 'portfolio/'
 

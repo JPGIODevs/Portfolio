@@ -66,14 +66,14 @@
 </div>
 
 <!-- ABOUT ME SECTION -->
-<div class="container hidden about">
-  <h1 style="text-align:center;font-size:50px;">About me</h1>
-  <div class='row' style="padding-top:5%;padding-bottom:5%;">
+<div class="container">
+  <h1 class="hidden right-slide" style="text-align:center;font-size:50px;">About me</h1>
+  <div class='row m-5 p-5'>
     <div class="col">
       <img class="rounded shadow-lg about-img" src="assets/aboutimg.jpg">
       <br/>
     </div>
-    <div class="col about-desc">
+    <div class="col about-desc hidden">
       <h2 style="margin-bottom:15px;"><b>An insight to me...</b></h2>
       <p>I am a <b>Software developer and Entrepeneur</b>, founding my sole-proprietary business of <b>JPGIO Developments</b>
         in Q1 of 2023 with major personal success! Having <b>over a decade</b> of experience within numerous sectors of
@@ -88,77 +88,41 @@
 </div>
 
 <!-- EXPERTISE SECTION -->
-<div class='container pt-5'>
-  <h1 style="text-align:center;font-size:50px;">Expertise</h1>
+<div class='container expertise-container'>
+  <h1 class="hidden left-slide" style="text-align:center;font-size:50px;">Expertise</h1>
   <br/>
-  <ul class="nav justify-content-center">
-  <li class="nav-item">
-    <%= turbo_frame_tag "expertise" do %>
-      <%= link_to "All", "home/expertise", data: { turbo_frame: "all"}, class: "nav-link" %>
-    <% end %>
-  </li>
-  <li class="nav-item">
-    <%= turbo_frame_tag "expertise" do %>
-      <%= link_to "WebDev", "home/expertise", data: { turbo_frame: "webdev"}, class: "nav-link" %>
-    <% end %>
-  </li>
-  <li class="nav-item">
-    <%= turbo_frame_tag "expertise" do %>
-      <%= link_to "AppDev", "home/expertise", data: { turbo_frame: "appdev"}, class: "nav-link" %>
-    <% end %>
-  </li>
-  <li class="nav-item">
-    <%= turbo_frame_tag "expertise" do %>
-      <%= link_to "Databases", "home/expertise", data: { turbo_frame: "databases"}, class: "nav-link" %>
-    <% end %>
-  </li>
-</ul>
 </div>
-<%= turbo_frame_tag "all" do %>
-  <div class="row row-cols-6 align-items-center g-2 pt-3 mt-4">
-    <div class="col">
-      <img src="assets/icon.png" class="expertise-icon">
-    </div>
 
-    <div class="col">
-      <img src="assets/icon.png" class="expertise-icon">
-    </div>
+<div class="row expertise row-cols-4 g-2 pt-3 mt-4">
 
-    <div class="col">
-      <img src="assets/icon.png" class="expertise-icon">
-    </div>
-
-    <div class="col">
-      <img src="assets/icon.png" class="expertise-icon">
-    </div>
-
-    <div class="col">
-      <img src="assets/icon.png" class="expertise-icon">
-    </div>
-
-    <div class="col">
-      <img src="assets/icon.png" class="expertise-icon">
-    </div>
+  <div class="col grid">
+    <h3 class="font-monospace text-white chonky">Software Development</h3>
+    <br/>
+    <img src="assets/icon.png" class="expertise-icon">
   </div>
-<% end %>
-<%= turbo_frame_tag "webdev" do %>
-  <div class="container expertise-frame">
-    <p>image table contents webdev</p>
+
+  <div class="col frontend-grid">
+    <h3 class="font-monospace text-white chonky">Frontend Development</h3>
+    <br/>
+    <img src="assets/icon.png" class="expertise-icon">
   </div>
-<% end %>
-<%= turbo_frame_tag "appdev" do %>
-  <div class="container expertise-frame">
-    <p>image table contents appdev</p>
+
+  <div class="col mobile-grid">
+    <h3 class="font-monospace text-white chonky">Mobile Solutions</h3>
+    <br/>
+    <img src="assets/icon.png" class="expertise-icon">
   </div>
-<% end %>
-<%= turbo_frame_tag "databases" do %>
-  <div class="container expertise-frame">
-    <p>image table contents databases</p>
+
+  <div class="col database-grid">
+    <h3 class="font-monospace text-white chonky">Databases & Delivery</h3>
+    <br/>
+    <img src="assets/icon.png" class="expertise-icon">
   </div>
-<% end %>
+
+</div>
 
 <!-- PROJECTS SECTION -->
-<div class="container" style="padding-top:10%">
+<div class="container" style="padding-top:25vh">
   <h1 style="text-align:center;font-size:50px;">Projects</h1>
 </div>
 
@@ -215,15 +179,21 @@
     </div>
   </div>
 </div>
+
+<!-- another seperating div -->
+<div class="p-5 m-5">
+  <br/>
+</div>
+
 <!-- CONTACTS AND SOCIALS -->
-<div class="container" style="padding-top:10%;text-align:center;">
+<div class="container hidden top-slide" style="text-align:center;">
   <h1 style="font-size:50px;">Contacts</h1>
   <br/>
   <p>Feel free to use the <b>contacts form</b> in order to directly enquire or contact via socials below!</p>
 </div>
 
 <!-- resume download buttom :) -->
-<div class="container mt-5 mb-5" style="text-align:center;">
+<div class="container mt-5 mb-5 hidden top-slide" style="text-align:center;">
   <%= link_to home_resume_path do %>
     <button type="button" class="btn btn-outline-light shadow resume-button">Download Resume</button>
   <% end%>
