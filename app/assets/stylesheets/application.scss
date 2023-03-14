@@ -135,8 +135,13 @@ footer{
     margin-right: auto;
     padding-bottom: 3;
 }
+@keyframes wooshtext {
+    0% {transform: translateY(0%);}
+    100% {transform: translateY(10%);}
+}
 .caro-text{
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+    animation: wooshtext 3s alternate-reverse ease infinite;
 }
 .resume-button{
     font-size: larger;
@@ -181,14 +186,20 @@ footer{
     margin-right: 0;
 }
 .expertise-container{
-    padding-top: 25vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 5vh;
+    border-radius: 15px;
+    border: 2px solid rgba(255,255,255,.1);
+}
+h5.expt{
+    color: #8b8b8b;
+}
+b.expt{
+    color: white;
 }
 .expertise{
     text-align: center;
-    border: 2px solid white;
-}
-.expertise-icon{
-    width: 30%;
 }
 .card-header{
     color: white;
@@ -221,8 +232,28 @@ footer{
       transparent
     );
 }
-.chonky{
-    @include chunky-underline(blue, true, 25%, 10%);
+.chonkyblue{
+    @include chunky-underline(rgb(0, 140, 255), true, 25%, 10%);
     display: inline;
     text-align: left;
+    justify-content: center;
 }
+.chonkyorange{
+    @include chunky-underline(rgb(255, 123, 0), true, 25%, 10%);
+    display: inline;
+    text-align: left;
+    justify-content: center;
+}
+.chonkygreen{
+    @include chunky-underline(rgb(0, 160, 67), true, 25%, 10%);
+    display: inline;
+    text-align: left;
+    justify-content: center;
+}
+.chonkypurple{
+    @include chunky-underline(rgb(174, 0, 255), true, 25%, 10%);
+    display: inline;
+    text-align: left;
+    justify-content: center;
+}
+
