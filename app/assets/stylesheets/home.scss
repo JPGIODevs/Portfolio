@@ -1,0 +1,104 @@
+.c-item{
+    height: 100vh;
+}
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+.my-carousel{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3;
+}
+@keyframes wooshtext {
+    0% {transform: translateY(0%);}
+    100% {transform: translateY(10%);}
+}
+.caro-text{
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+    animation: wooshtext 3s alternate-reverse ease infinite;
+}
+.resume-button{
+    font-size: larger;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+    position: relative;
+    transition: transform 250ms;
+}
+.resume-button:hover{
+    transform: translateY(5px);
+    text-shadow: none;
+}
+.caro-shape {
+    position: absolute;
+    left: 0;
+    top:100vh;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 11;
+    opacity: 15%;
+}
+.caro-shape svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 65px;
+}
+.caro-shape .shape-fill {
+    fill: #8b8b8b;
+}
+.about-desc{
+    text-align: right;
+    color: white;
+    margin-left: 0;
+}
+.about-img{
+    position: absolute;
+    width: 30vw;
+    height: 50vh;
+    object-fit: cover;
+    object-position: 80% 20%;
+    margin-right: 0;
+}
+.expertise-container{
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 5vh;
+    border-radius: 15px;
+    border: 2px solid rgba(255,255,255,.1);
+}
+h5.expt{
+    color: #8b8b8b;
+}
+b.expt{
+    color: white;
+}
+.expertise{
+    text-align: center;
+}
+.expertise-frame{
+    padding: 5% 5%;
+    text-align: center;
+}
+.card-header{
+    color: white;
+    font-family: monospace;
+}
+.card:nth-child(2){
+    transition-delay: 200ms;
+}
+.icon-wrapper{
+    text-align: center;
+}
+.contacts-icon{
+    filter: invert(1);
+    height: 8%;
+    width: 8%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
