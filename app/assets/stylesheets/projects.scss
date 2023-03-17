@@ -1,18 +1,11 @@
-.topcontainer.portcontainer{
-    height: 100vh;
-    position: absolute;
-    z-index: 10;
-    top:0;
-    left: 0;
-    filter: brightness(80%);
-}
-.bottomcontainer.portcontainer{
-    top:100vh;
-    height: 100vh;
-    position: relative;
-}
-.portpic{
-    height: 100vh;
-    width: 100vw;
+.project-beforepic{
+    vertical-align: middle;
+    height:60vh;
     object-fit: cover;
+    animation: fadeIn 2.5s ease;
+}
+.float-text{
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+    animation: wooshtext 3s alternate-reverse ease infinite;
+    text-align: left;
 }
