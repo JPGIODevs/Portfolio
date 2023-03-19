@@ -6,7 +6,13 @@
     object-fit: cover;
     filter: brightness(0.8);
 }
+.carousel-container{
+    top: 30vh;
+    width:60vw;
+    height:50vh;
+}
 .my-carousel{
+    display: inline;
     text-align: center;
     vertical-align: middle;
     padding-top: 15vh;
@@ -30,25 +36,6 @@
 .resume-button:hover{
     transform: translateY(5px);
     text-shadow: none;
-}
-.caro-shape {
-    position: absolute;
-    left: 0;
-    top:100vh;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    z-index: 11;
-    opacity: 15%;
-}
-.caro-shape svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 65px;
-}
-.caro-shape .shape-fill {
-    fill: #8b8b8b;
 }
 .about-desc{
     text-align: right;
