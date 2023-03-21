@@ -1,9 +1,10 @@
 .c-item{
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
 }
 .c-img{
-    object-fit: cover;
+    object-fit: fill;
+    object-position: top;
     filter: brightness(0.8);
 }
 .my-carousel{
@@ -15,7 +16,7 @@
     padding-bottom: 3;
 }
 .carousel-caption{
-    top: 60vh;
+    top: 45vh;
 }
 @keyframes wooshtext {
     0% {transform: translateY(0%);}
@@ -46,7 +47,7 @@
     width: calc(112% + 1.3px);
     height: 174px;
     transform: scale(1, -1) translate(0,-100) rotateY(180deg);
-    opacity: 10%;
+    opacity: 5%;
 }
 .pretty-shape .shape-fill {
     fill: #ffffff;
@@ -59,7 +60,7 @@
 .about-img{
     position: absolute;
     width: 30vw;
-    height: 50vh;
+    height: 53vh;
     object-fit: cover;
     object-position: 80% 20%;
     margin-right: 0;
@@ -91,6 +92,63 @@ b.expt{
 }
 .card:nth-child(2){
     transition-delay: 200ms;
+}
+.image-wrapper{
+    position: relative;
+}
+.cardimg{
+    width: 590px;
+    height: 590px;
+}
+#rubyimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+#rubyimg:hover{
+    opacity: 1;
+}
+#tauriimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+#tauriimg:hover{
+    opacity: 1;
+}
+#csharpimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+#csharpimg:hover{
+    opacity: 1;
+}
+#botimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+#botimg:hover{
+    opacity: 1;
+}
+#readerimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+#readerimg:hover{
+    opacity: 1;
 }
 .icon-wrapper{
     text-align: center;
