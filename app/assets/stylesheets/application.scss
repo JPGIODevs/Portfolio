@@ -1,11 +1,9 @@
 body {
-    position: relative;
     height: 100%;
     width: 100%;
     padding: 0px;
     margin: 0px;
-    background-image: url("assets/background.gif");
-    background-size: cover;
+    background-color: #0e0e0e;
     animation: fadeIn 1s ease;
 }
 @keyframes fadeIn{
@@ -20,10 +18,11 @@ h1{
 }
 header{
     vertical-align: top;
-    display: inline-block;
+    position: relative;
+    z-index: 20;
 }
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -86,9 +85,8 @@ footer{
     top: 0;
     left: 0;
     width: 100%;
-    overflow: hidden;
     line-height: 0;
-    z-index: 11;
+    z-index: 20;
 }
 .top-shape svg {
     position: relative;
