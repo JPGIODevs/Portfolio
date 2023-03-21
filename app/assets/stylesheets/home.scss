@@ -35,6 +35,22 @@
     transform: translateY(5px);
     text-shadow: none;
 }
+.pretty-shape {
+    width: 100%;
+    line-height: 0;
+    z-index: 20;
+}
+.pretty-shape svg {
+    position: relative;
+    display: block;
+    width: calc(112% + 1.3px);
+    height: 174px;
+    transform: scale(1, -1) translate(0,-100) rotateY(180deg);
+    opacity: 10%;
+}
+.pretty-shape .shape-fill {
+    fill: #ffffff;
+}
 .about-desc{
     text-align: right;
     color: white;
@@ -78,6 +94,7 @@ b.expt{
 }
 .icon-wrapper{
     text-align: center;
+    padding-bottom: 20%;
 }
 .contacts-icon{
     filter: invert(1);
