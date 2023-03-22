@@ -3,8 +3,9 @@
     height: 100dvh;
 }
 .c-img{
-    object-fit: fill;
-    object-position: top;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
     filter: brightness(0.8);
 }
 .my-carousel{
