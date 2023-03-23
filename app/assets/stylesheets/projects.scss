@@ -1,4 +1,4 @@
-.project-beforepic{
+.projectpic{
     vertical-align: middle;
     height:60vh;
     object-fit: cover;
@@ -8,4 +8,15 @@
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
     animation: wooshtext 3s alternate-reverse ease infinite;
     text-align: left;
+}
+.portfinish{
+    border: 2px solid rgba(255,255,255,0.2);
+}
+.desc-container{
+    background-color: #1c1c1c;
+    text-align: center;
+    width: 100dvw;
+}
+#secondaryh1{
+    filter: brightness(70%);
 }
