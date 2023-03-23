@@ -121,6 +121,16 @@ b.expt{
 #tauriimg:hover{
     opacity: 1;
 }
+#manifoldimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+#manifoldimg:hover{
+    opacity: 1;
+}
 #csharpimg{
     position: absolute;
     top: 0;
