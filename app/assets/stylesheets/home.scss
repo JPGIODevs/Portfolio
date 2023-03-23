@@ -95,7 +95,7 @@ b.expt{
     transition-delay: 200ms;
 }
 .image-wrapper{
-    position: relative;
+    position: fill;
 }
 .cardimg{
     width: 590px;
@@ -103,6 +103,7 @@ b.expt{
 }
 #rubyimg{
     position: absolute;
+    object-fit: cover;
     top: 0;
     left: 0;
     opacity: 0;
