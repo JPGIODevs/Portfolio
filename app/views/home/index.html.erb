@@ -1,4 +1,5 @@
 <%= stylesheet_link_tag "home"%>
+<%= javascript_include_tag('application.js') %>
 <!-- CAROUSEL BOOTSTRAP INTEGRATION -->
 <div id="maincarousel" class="carousel slide my-carousel carousel-fade" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -67,8 +68,8 @@
 
 <!-- ABOUT ME SECTION -->
 <div class="container pt-3 mt-3">
-  <h1 class="hidden right-slide" style="text-align:center;font-size:50px;">About me</h1>
-  <div class='row mt-3'>
+  <h1 class="hidden right-slide sectionheader mb-3 pb-3">About me</h1>
+  <div class='row mt-3 pt-3'>
     <div class="col">
       <img class="rounded shadow-lg about-img" src="assets/aboutimg.jpg">
       <br/>
@@ -90,7 +91,7 @@
 <!-- EXPERTISE SECTION -->
 <div class="container expertise">
   <div class='container' style="padding: 40vh 5vh 5vh 5vh;">
-    <h1 class="hidden left-slide" style="font-size:50px;">Expertise</h1>
+    <h1 class="hidden left-slide sectionheader">Expertise</h1>
     <br/>
   </div>
   <!-- 1st row, names and chonky underlines -->
@@ -162,7 +163,7 @@
 </div>
 <!-- PROJECTS SECTION -->
 <div class="container hidden right-slide" style="padding-top:35vh;">
-  <h1 style="text-align:center;font-size:50px;">Projects</h1>
+  <h1 class="sectionheader">Projects</h1>
 </div>
 
 <!-- ROWS FOR PROJECTS SECTION CARDS -->
@@ -257,7 +258,7 @@
 
 <!-- CONTACTS AND SOCIALS -->
 <div class="container hidden top-slide" style="text-align:center;">
-  <h1 style="font-size:50px;">Contacts</h1>
+  <h1 class="sectionheader">Contacts</h1>
   <br/>
   <p>Feel free to use the <b>contacts form</b> in order to directly enquire or contact via socials below!</p>
 </div>
