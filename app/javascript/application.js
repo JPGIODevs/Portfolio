@@ -15,9 +15,12 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+document.addEventListener("turbo:load", (event) =>{
+    console.log("turbo:load, runs every time page loads");
 
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+})
 
 
 //window.alert("working");
