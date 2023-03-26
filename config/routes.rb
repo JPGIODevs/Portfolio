@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'projects/portfolio'
+  get 'projects/manifold'
   get 'home/about'
   get 'home/resume'
   get 'home/contacts'

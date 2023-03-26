@@ -30,3 +30,18 @@
     width: 40dvw;
     height: 100%;
 }
+.gradient {
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+    background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+}
+.leftdiv{
+    text-align: left;
+}
+.rightdiv{
+    text-align: right;
+}
+.secondarytext{
+    color: #c0c0c0;
+}

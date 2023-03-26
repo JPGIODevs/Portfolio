@@ -30,6 +30,7 @@
             </div>
         </div>
     </div>
+    <!-- glassy div with picture -->
     <div class="desc-container hidden mt-5 pt-5">
         <div class="container">
             <h1><b>Steaming ahead! With Ruby-on-Rails 🛤️</b></h1>
@@ -48,10 +49,87 @@
         <%= image_tag "projects/portfolio/webpic.png", class: "projectwebpic pb-3 mb-3 rounded hidden", alt: "webpic" %>
     </div>
 </div>
-<div class="container text-align-left">
-    <h1>
+<!-- REASONS DIV + 2 COL -->
+<div class="container mt-5 pt-5 mb-5 pb-5 leftdiv">
+    <div id="inner div" class="hidden left-slide">
+        <h1 class="gradient">THE REASON</h1>
+
+        <p>~</p>
+
+        <h5 class="secondarytext">An insight to the technologies I employ on this website, and what that may mean for you!</h5>
+
+        <hr/>
+
+        <h5><b>Many consider Rails dead...</b> I believe it to be more alive than ever!</h5>
+        <p>Many people jumped ship to solutions such as <b>Node.js & React</b> causing people to assume rails was dead... I believe the contrary.
+        <br/>
+        <span><a href="https://insights.stackoverflow.com/survey/2021#overview"><b>The Stackoverflow developer survey 2022</b></a></span>
+        showed a <b>6-7% uptake of Ruby and RoR usage</b> which indicates a lively technology to me! Couple this with the
+        <b>huge collection of Gems(libaries), mature codebase and documentation</b> and we have a lively
+        web development technology!</p>
+        <br/>
+
+        <h5><b>Hotwire also adds HUGE value to Rails</b>, providing HTML-centric approach to Responsive & Reactive webapps.</h5>
+        <p>The use of Turbo and Stimulus, alongside the Sprockets asset-pipeline, provides an experience of similiar
+        speed to a single-page app, without the indoctrination required for said single-page development!
+        With all theese advantages, <b>fast development & scalability is made easy with Rails!</b></p>
+        <br/>
+    </div>
+    <div class='row mt-3 pt-3 hidden right-slide'>
+        <div class="col">
+            <%= image_tag "projects/portfolio/techs.png", class: "rounded about-img w-100", alt: "technologies" %>
+            <br/>
+        </div>
+        <div class="col about-desc rightdiv">
+            <h2 style="margin-bottom:15px; font-monospace"><b>Other technologies</b></h2>
+            <p>Ontop of the usual Rails setup, I aimed to make development as fast & functional as possible, utlising
+            other technologies to <b>Supercharge</b> my website in a time-frame that was acceptable!
+            <br/>
+
+            <h5>First is <b>Styling.</b></h5>
+            <p>I used a combination of <b>Bootstrap 5 & ScSS</b>. Having had a background in CSS already,
+            I saw it to be more practical to build upon the knowledge rather than to relearn the art using, persay,
+            <b>TailwindCSS</b>. This made my custom styling <b>faster and Cleaner</b> as I utilised the nesting available in ScSS.</p>
+            <br/>
+
+            <h5>Second is <b>Data Storage.</b></h5>
+            <p>In order to facilitate email forms, and my live-chat, <span><%= link_to "found here"%>, projects_manifold_path</span>,
+            I needed a database. In my experience, SQLite3 works well for light-medium applications and even outperforms MySQL & Postgres
+            in read-heavy applications. As such, I chose said SQLite3 database and associated gems in use in my project, which performed perfectly
+            and integrated seemlessly!</p>
+        </div>
+  </div>
 </div>
 
+<!-- results div + 2 col -->
+<div class="container mt-5 pt-5 mb-5 pb-5 rightdiv">
+    <h1 class="hidden right-slide gradient">THE RESULT</h1>
+    <p>~</p>
+    <h5 class="secondarytext">An insight to the technologies I employ on this website, and what that may mean for you!</h5>
+    <hr/>
+    <p>First off is my choice of <b>Ruby-on-Rails</b>. Many people considered RoR to be a dead technology as solutions
+    such as Node.js caused many to jumpship. To me, this is simply untrue.
+    <span><a href="https://insights.stackoverflow.com/survey/2021#overview"><b>The Stackoverflow developer survey 2022</b></a></span>
+    showed a 6-7% uptake of Ruby and RoR usage which indicates a lively technology to me! Couple this with the
+    gigantic collection of Gems(libaries), mature codebase and documentation and we have a lively
+    web development technology with all the benefits required for fast development & scalability</p>
+</div>
+
+<!-- retrospective div + 2 col -->
+<div class="container mt-5 pt-5 mb-5 pb-5 leftdiv">
+    <h1 class="hidden left-slide gradient">THE RETROSPECTIVE</h1>
+    <p>~</p>
+    <h5 class="secondarytext">An insight to the technologies I employ on this website, and what that may mean for you!</h5>
+    <hr/>
+    <p>First off is my choice of <b>Ruby-on-Rails</b>. Many people considered RoR to be a dead technology as solutions
+    such as Node.js caused many to jumpship. To me, this is simply untrue.
+    <span><a href="https://insights.stackoverflow.com/survey/2021#overview"><b>The Stackoverflow developer survey 2022</b></a></span>
+    showed a 6-7% uptake of Ruby and RoR usage which indicates a lively technology to me! Couple this with the
+    gigantic collection of Gems(libaries), mature codebase and documentation and we have a lively
+    web development technology with all the benefits required for fast development & scalability</p>
+</div>
+
+<!-- contained pictures carousel & specs & link to github -->
 <div style="padding-top:40%">
     <br/>
 </div>
