@@ -92,7 +92,7 @@
             <p>In order to facilitate email forms, and <b>my live-chat</b>, <span><%= link_to "Found Here :)", projects_manifold_path%></span>,
             I needed a database. In my experience, <b>SQLite3</b> works well for light-to-medium applications and even <b>outperforms MySQL & Postgres
             in read-heavy applications.</b> As such, I chose said SQLite3 database and associated gems in use in my project, which <b>performed perfectly
-            and integrated seemlessly!</p>
+            and integrated seemlessly!</b></p>
         </div>
   </div>
 </div>
@@ -110,19 +110,19 @@
         The Use of Hotwire Frontend also made the application snappy and I couldnt be happier with the website's performance, even
         if it is a low-traffic portfolio website.</p>
         <br/>
-        <h5>Below is a compilation of exemplars of my website</h5>
-        <br/>
     </div>
     <div id="exemplarcarousel" class="carousel slide carousel-fade text-center" data-bs-ride="carousel">
-        <div class="carousel-inner exemplarcontainer text-center">
-            <div class="carousel-item active rounded">
-                <img src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712__340.jpg" class="d-block w-100" alt="Home">
+        <br/>
+        <h5 class="mb-3 pb-3">Below is a compilation of my <b>Rails-Powered Website!</b></h5>
+        <div class="carousel-inner exemplarcontainer text-center rounded">
+            <div class="carousel-item active">W
+                <%= image_tag "projects/portfolio/portcarousel/home1.png", class: "d-block w-100", alt: "Home1" %>
             </div>
             <div class="carousel-item">
-                <img src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712__340.jpg" class="d-block w-100" alt="Home2">
+                <%= image_tag "projects/portfolio/portcarousel/home2.png", class: "d-block w-100", alt: "Home2" %>
             </div>
             <div class="carousel-item">
-                <img src="https://www.thames-exams.co.uk/wp-content/uploads/2018/01/Placeholder.png" class="d-block w-100" alt="Resume">
+                <%= image_tag "projects/portfolio/portcarousel/home3.png", class: "d-block w-100", alt: "Home3" %>
             </div>
             <div class="carousel-item">
                 <img src="https://www.thames-exams.co.uk/wp-content/uploads/2018/01/Placeholder.png" class="d-block w-100" alt="Portfolio">
@@ -139,14 +139,53 @@
     <div id="inner div" class="hidden left-slide">
         <h1 class="left-slide gradient">THE RETROSPECTIVE</h1>
         <p>~</p>
-        <h5 class="secondarytext">An insight to the technologies I employ on this website, and what that may mean for you!</h5>
+        <h5 class="secondarytext">The Good, Bad, Ugly & All the inbetween + How I Learned from it</h5>
         <hr/>
-        <p>First off is my choice of <b>Ruby-on-Rails</b>. Many people considered RoR to be a dead technology as solutions
-        such as Node.js caused many to jumpship. To me, this is simply untrue.
-        <span><a href="https://insights.stackoverflow.com/survey/2021#overview"><b>The Stackoverflow developer survey 2022</b></a></span>
-        showed a 6-7% uptake of Ruby and RoR usage which indicates a lively technology to me! Couple this with the
-        gigantic collection of Gems(libaries), mature codebase and documentation and we have a lively
-        web development technology with all the benefits required for fast development & scalability</p>
+        <p>To assume, as <b>likely-fellow engineers, solution and development makers</b>, I will format my learnings and major
+        problems in the <b>form of list with sections: Problem, fix, learnt lesson.</b></p>
+        <br/>
+        <ul>
+            <li>
+                <h5>Lack of documentation for Rails 7 by comparison to other modern frameworks (Django, React, Vue.js)</h5>
+                <p>From what I understand, Rails implements new features in updates in a faster-than-usual manor.
+                This leads to old methodologies and codebases being left obsolete, after an update. This essentially removes
+                all documentation and without the hypetrain behind rails to entice junior developers, there is no demand and
+                thus no supply of fully up-to-date documentation which makes the development experience of a junior, challenging
+                at best. Despite this trouble, I intend to utilise Rails for longer as I am over much of the learning curve and
+                now develop better applications, faster as opposed to an alternative such as Django or Svelte. Should this fail,
+                I would considering jumping ship to another popular framework with a mature codebase such as React, Django, Angular
+                or Vue whilst dabbling in modern frameworks such as Svelte.</p>
+            </li>
+            <li>
+                <h5>Ambiguity within Hotwire (specifically Turbo) function in default Rails 7</h5>
+                <p>In a similiar tune to the above problem, the lack of documentation led to a huge ambiguity in the default
+                package of Rails 7 and to what extent it utilises Hotwire, Turbo & Stimulus to manage traditional tasks such as
+                asset pipeline management & loading a webpage. Thanks to stackoverflow, I managed to solve an issue present
+                within the asset pipeline that would have been an easy fix if only the documentation for Turbo included it.
+                In future, I would consider creating said documentation to allow junior developers to better understand and uptake
+                Rails development. This is the best I can do since I now have the knowledge in order to utilise Rails & Hotwire to the
+                fullest!</p>
+            </li>
+            <li>
+                <h5>CSS repetion/inefficiency</h5>
+                <p>This one was fairly simple. We all know that naming CSS classes & ID's is borderline impossible without strange and
+                silly personal conventions. We also know that conventional, vanilla CSS includes alot of repetition. My soltuion for this
+                was to use ScSS (as opposed to SaSS). This was such that I kept my syntactically-familiar style of CSS but benefitted from
+                the added features, most notable nesting. This allowed for the removal of the repetition but the paradoxical nature of naming
+                said stylesheet classes & ID's still laid a mystery. In future, I would potentially use TailwindCSS in order to remove this
+                issue as it forgoes the ideal of a dedicated stylesheet and approaches the idea of a more HTML-first approach to styling.
+                This would work well considering Hotwire (the default Rails 7 frontend) works by the same paradigm.</p>
+            </li>
+            <li>
+                <h5>Bootstrap/Rails 7 lack of compatibility with Forms</h5>
+                <p>Having tackled the implementation of live-chat and contact forms within the website a number of 3 times, I found
+                myself stuck. It seemed that the traditional pretty Bootstrap forms did not work with the forms Rails seemed to deal in.
+                Over much trepidation, I bowed to the functional properties of the Rails forms, which whilst working did not look pretty!
+                In future, TailwindCSS may be used to make the traditional Rails forms look better, or perhaps there was documentation on
+                the Rails forms helpers in which I missed, either way I would take some more time to create a better-optimized and PRETTIER
+                contact form!</p>
+            </li>
+        </ul>
     </div>
 </div>
 
