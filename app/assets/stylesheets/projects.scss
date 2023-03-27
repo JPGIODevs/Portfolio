@@ -12,15 +12,11 @@
 .portfinish{
     border: 2px solid rgba(255,255,255,0.2);
 }
-.desc-container{
+.glasscontainer{
     background-image: url('assets/projects/portfolio/glassybox.png');
     object-fit: cover;
     text-align: center;
     width: 100dvw;
-}
-.desc-container::before{
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-    filter: blur(10px);
 }
 #secondaryh1{
     filter: brightness(70%);

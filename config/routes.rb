@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+#projects app
   get 'projects/portfolio'
-  get 'projects/manifold'
+  get 'projects/placeholder'
+  #unfinishing projects :) route as needed
+  get 'projects/manifold' => redirect("projects/placeholder")
+#home app
   get 'home/about'
   get 'home/resume'
   get 'home/contacts'
