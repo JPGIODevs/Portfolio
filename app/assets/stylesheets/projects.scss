@@ -14,7 +14,7 @@
 }
 .glasscontainer{
     background-image: url('assets/projects/portfolio/glassybox.png');
-    object-fit: cover;
+    object-fit: fill;
     text-align: center;
     width: 100dvw;
 }
@@ -37,16 +37,13 @@
 }
 .rightdiv{
     text-align: right;
-    width: 100%;
 }
 .secondarytext{
     color: #c0c0c0;
 }
-#exemplarcontainer{
-    position: relative;
-}
-.exemplarimg{
-    height: 40dvh;
-    width: 100%;
-    object-fit: cover;
+.exemplarcontainer{
+    width: 45%;
+    height: 450px;
+    margin: auto;
+    overflow-y: hidden;
 }
