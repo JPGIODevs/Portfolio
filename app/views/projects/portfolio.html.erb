@@ -36,7 +36,6 @@
             <h1><b>Steaming ahead! With Ruby-on-Rails 🛤️</b></h1>
             <h1 id="secondaryh1">old is gold <b>🏅</b></h1>
             <hr/>
-            <p/>
             <h5 class="mt-5 font-monospace pb-5">Utilising a mix of <b>Rails 7, Bootstrap 5</b> and some old-fashioned <b>HTML/CSS/JS</b>,
             I have created a personal portfolio website that is <b>Not-Only visually stunning</b>
             but also, thanks to the <b>Hotwire Frontend</b>, is also responsive, reactive and <i>fast!</i>
@@ -54,13 +53,9 @@
 <div class="container mt-5 pt-5 mb-5 pb-5 leftdiv">
     <div id="inner div" class="hidden left-slide">
         <h1 class="gradient">THE REASON</h1>
-
         <p>~</p>
-
         <h5 class="secondarytext">An insight to the technologies I employ on this website, and what that may mean for you!</h5>
-
         <hr/>
-
         <h5><b>Many consider Rails dead...</b> I believe it to be more alive than ever!</h5>
         <p>Many people jumped ship to solutions such as <b>Node.js & React</b> causing people to assume rails was dead... I believe the contrary.
         <br/>
@@ -103,31 +98,58 @@
 </div>
 
 <!-- results div + 2 col -->
-<div class="container mt-5 pt-5 mb-5 pb-5 rightdiv glascontainer">
-    <h1 class="hidden right-slide gradient">THE RESULT</h1>
-    <p>~</p>
-    <h5 class="secondarytext">An insight to the technologies I employ on this website, and what that may mean for you!</h5>
-    <hr/>
-    <p>First off is my choice of <b>Ruby-on-Rails</b>. Many people considered RoR to be a dead technology as solutions
-    such as Node.js caused many to jumpship. To me, this is simply untrue.
-    <span><a href="https://insights.stackoverflow.com/survey/2021#overview"><b>The Stackoverflow developer survey 2022</b></a></span>
-    showed a 6-7% uptake of Ruby and RoR usage which indicates a lively technology to me! Couple this with the
-    gigantic collection of Gems(libaries), mature codebase and documentation and we have a lively
-    web development technology with all the benefits required for fast development & scalability</p>
+<div class="mt-5 pt-5 mb-5 pb-5 rightdiv glasscontainer">
+    <div id="inner div" class="container hidden right-slide">
+        <h1 class="gradient">THE RESULT</h1>
+        <p>~</p>
+        <h5 class="secondarytext">What it was I created, and How it performed!</h5>
+        <hr/>
+        <p>With some tinkering, including Rails/Hotwire mastery and hours of efficiency fixes for instance, eventually my fully-fledged Rails Portfolio was hosted
+        and delivered via <span><%= link_to "Hatchbox.io", "https://hatchbox.io" %></span> to much of my own elation! <br/>
+        Overall, I was very pleased with the Rails development experience and how fast the turn-over was, even for a then-Novice Rails developer.<br/>
+        The Use of Hotwire Frontend also made the application snappy and I couldnt be happier with the website's performance, even
+        if it is a low-traffic portfolio website.</p>
+        <br/>
+        <h5>Below is a compilation of exemplars of my website</h5>
+        <br/>
+        <div class="container rounded shadow" id="exemplarcontainer">
+            <div id="exemplarcarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active exemplarimg">
+                        <img src="https://www.thames-exams.co.uk/wp-content/uploads/2018/01/Placeholder.png" class="d-block w-100" alt="Home">
+                    </div>
+                    <div class="carousel-item exemplarimg">
+                        <img src="https://www.thames-exams.co.uk/wp-content/uploads/2018/01/Placeholder.png" class="d-block w-100" alt="Home2">
+                    </div>
+                    <div class="carousel-item exemplarimg">
+                        <img src="https://www.thames-exams.co.uk/wp-content/uploads/2018/01/Placeholder.png" class="d-block w-100" alt="Resume">
+                    </div>
+                    <div class="carousel-item exemplarimg">
+                        <img src="https://www.thames-exams.co.uk/wp-content/uploads/2018/01/Placeholder.png" class="d-block w-100" alt="Portfolio">
+                    </div>
+                    <div class="carousel-item exemplarimg">
+                        <img src="https://www.thames-exams.co.uk/wp-content/uploads/2018/01/Placeholder.png" class="d-block w-100" alt="Contacts">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- retrospective div + 2 col -->
 <div class="container mt-5 pt-5 mb-5 pb-5 leftdiv">
-    <h1 class="hidden left-slide gradient">THE RETROSPECTIVE</h1>
-    <p>~</p>
-    <h5 class="secondarytext">An insight to the technologies I employ on this website, and what that may mean for you!</h5>
-    <hr/>
-    <p>First off is my choice of <b>Ruby-on-Rails</b>. Many people considered RoR to be a dead technology as solutions
-    such as Node.js caused many to jumpship. To me, this is simply untrue.
-    <span><a href="https://insights.stackoverflow.com/survey/2021#overview"><b>The Stackoverflow developer survey 2022</b></a></span>
-    showed a 6-7% uptake of Ruby and RoR usage which indicates a lively technology to me! Couple this with the
-    gigantic collection of Gems(libaries), mature codebase and documentation and we have a lively
-    web development technology with all the benefits required for fast development & scalability</p>
+    <div id="inner div" class="hidden left-slide">
+        <h1 class="left-slide gradient">THE RETROSPECTIVE</h1>
+        <p>~</p>
+        <h5 class="secondarytext">An insight to the technologies I employ on this website, and what that may mean for you!</h5>
+        <hr/>
+        <p>First off is my choice of <b>Ruby-on-Rails</b>. Many people considered RoR to be a dead technology as solutions
+        such as Node.js caused many to jumpship. To me, this is simply untrue.
+        <span><a href="https://insights.stackoverflow.com/survey/2021#overview"><b>The Stackoverflow developer survey 2022</b></a></span>
+        showed a 6-7% uptake of Ruby and RoR usage which indicates a lively technology to me! Couple this with the
+        gigantic collection of Gems(libaries), mature codebase and documentation and we have a lively
+        web development technology with all the benefits required for fast development & scalability</p>
+    </div>
 </div>
 
 <!-- contained pictures carousel & specs & link to github -->
