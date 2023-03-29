@@ -85,6 +85,8 @@ GEM
     crass (1.0.6)
     date (3.3.3)
     debug (1.7.1)
+    dockerfile-rails (1.2.5)
+      rails
     erubi (1.12.0)
     ffi (1.15.5)
     globalid (1.1.0)
@@ -227,6 +229,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  dockerfile-rails (>= 1.2)
   hotwire-rails
   importmap-rails
   jbuilder
