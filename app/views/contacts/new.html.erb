@@ -1,0 +1,72 @@
+<%= stylesheet_link_tag "contacts"%>
+
+<div class="container mt-5 pt-5">
+    <h1 id="page-title">Contacts</h1>
+    <br/>
+    <h5>As a goal-chaser and Engineer at heart, I always love hearing from new people with exciting prospects
+    for future developments. If you have any queries or propositions, feel free to contact me in the following form...</h5>
+    <br/>
+    <p>Alternatively, scroll below to see my socials :)</p>
+    <br/>
+
+    <div class="skinny_wrapper wrapper_padding text-left mb-5 pb-5">
+        <%= form_with model: @contact do |form|%>
+
+            <div class="mb-3">
+                <%= form.label :name, class: "form-label"%>
+                <%= form.text_field :name, required: true, class: "form-control" %>
+            </div>
+
+            <br/>
+
+            <div class="mb-3">
+                <%= form.label :email, class: "form-label"%>
+                <%= form.email_field :email, required: true, class: "form-control" %>
+            </div>
+
+            <br/>
+
+            <div class="mb-3">
+                <%= form.label :message, class: "form-label"%>
+                <%= form.text_area :message, as: :text, class: "form-control"%>
+            </div>
+
+            <div class="hidden-field">
+                <%= form.label :nickname%>
+                <%= form.text_field :nickname, hint: "Leave this field blank"%>
+            </div>
+
+            <br/>
+
+            <%= form.submit "Send Message", class: "button btn btn-outline-light"%>
+
+        <% end %>
+    </div>
+</div>
+
+<!-- CONTACTS AND SOCIALS -->
+<div class="container hidden top-slide text-center mt-5 pt-5">
+    <h1 class="sectionheader">Contacts</h1>
+    <p>Contact via socials below!</p>
+</div>
+
+<!-- resume download buttom :) -->
+<div class="container mt-5 mb-5 hidden top-slide text-center">
+  <%= link_to "#" do %>
+    <button type="button" class="btn btn-outline-light shadow resume-button">Download Resume</button>
+  <% end%>
+</div>
+
+<!-- Contact socials images -->
+<div class="icon-wrapper">
+
+
+  <a href="https://www.instagram.com/jpgiodevs/"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077042.png" class="contacts-icon" alt="instaicon"></a>
+
+  <a href="https://github.com/JPGIODevs"><img src="https://cdn-icons-png.flaticon.com/512/1322/1322104.png" class="contacts-icon" alt="instaicon"></a>
+
+  <a href="mailto:jpgiodevelopments@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/2089/2089181.png" class="contacts-icon" alt="instaicon"></a>
+
+  <a href="https://www.linkedin.com/in/jack-packham-b197b6261/"><img src="https://cdn-icons-png.flaticon.com/512/2582/2582575.png" class="contacts-icon" alt="instaicon"></a>
+
+</div>

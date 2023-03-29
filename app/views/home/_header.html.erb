@@ -26,24 +26,16 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/projects/portfolio">On-Rails Portfolio <span class="badge bg-danger">Ruby</span></a></li>
-                <li><a class="dropdown-item" href="#">Tauri Tasks <span class="badge rust-pill">Rust</span></a></li>
-                <li><a class="dropdown-item" href="#">Manifold Chat <span class="badge bg-danger">Ruby</span></a></li>
-                <li><a class="dropdown-item" href="#">PS1 horror game <span class="badge bg-success">C#</span></a></li>
-                <li><a class="dropdown-item" href="#">GPT3 / Twilio SMS bot <span class="badge python-pill">Python</span></a></li>
-                <li><a class="dropdown-item" href="#">READER Ebook&PDF <span class="badge bg-info">Flutter</span></a></li>
+                <li><a class="dropdown-item" href="/projects/tauritasks">Tauri Tasks <span class="badge rust-pill">Rust</span></a></li>
+                <li><a class="dropdown-item" href="/projects/manifold">Manifold Chat <span class="badge bg-danger">Ruby</span></a></li>
+                <li><a class="dropdown-item" href="/projects/ps1horror">PS1 horror game <span class="badge bg-success">C#</span></a></li>
+                <li><a class="dropdown-item" href="/projects/twilioAI">GPT3 / Twilio SMS bot <span class="badge python-pill">Python</span></a></li>
+                <li><a class="dropdown-item" href="/projects/reader">READER Ebook&PDF <span class="badge bg-info">Flutter</span></a></li>
               </ul>
-            </li>
-            <!-- NAVBAR RESUME -->
-            <li class="nav-item">
-              <%= link_to "Resume", home_resume_path, class:"nav-link"%>
-            </li>
-            <!-- NAVBAR ABOUT -->
-            <li class="nav-item">
-              <%= link_to "About", home_about_path, class:"nav-link"%>
             </li>
             <!-- NAVBAR CONTACTS -->
             <li class="nav-item">
-              <%= link_to "Contacts", home_contacts_path, class:"nav-link"%>
+              <%= link_to "Contacts", contacts_new_path, class:"nav-link"%>
             </li>
           </ul>
         </div>
