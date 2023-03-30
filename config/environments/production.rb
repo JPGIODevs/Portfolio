@@ -47,7 +47,7 @@ Rails.application.configure do
   # config.action_cable.allowed_request_origins = [ "http://example.com", /http:\/\/example.*/ ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # config.force_ssl = true
+  config.force_ssl = true
 
   # Include generic and useful information about system operation, but avoid logging too much
   # information to avoid inadvertent exposure of personally identifiable information (PII).
@@ -65,15 +65,20 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  config.x.mail_from = %(jpgiodevelopments<no-reply@jpgiodevelopments.com>)
+  config.action_mailer.default_url_options = { host: 'jpgiodevelopments.com' }
+  config.action_mailer.raise_delivery_errors = true
+
   config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
+    address:              'email-smtp.eu-west-1.amazonaws.com',
     port:                 '587',
     domain:               'gmail.com',
     user_name:            Rails.application.credentials.dig(:email, :user),
     password:             Rails.application.credentials.dig(:email, :password),
     authentication:       :plain,
     tls:                  true,
-    enable_starttls_auto: true
+    enable_starttls_auto: true,
+    openssl_verify_mode:  none
   }
 
   # Ignore bad email addresses and do not raise email delivery errors.
