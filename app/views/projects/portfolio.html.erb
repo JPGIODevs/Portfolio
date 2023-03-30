@@ -122,11 +122,12 @@
         if it is a low-traffic portfolio website.</p>
         <br/>
     </div>
+
     <div id="exemplarcarousel" class="carousel slide carousel-fade text-center" data-bs-ride="carousel">
         <br/>
         <h5 class="mb-3 pb-3">Below is a compilation of my <b>Rails-Powered Website!</b></h5>
         <div class="carousel-inner exemplarcontainer text-center rounded">
-            <div class="carousel-item active">W
+            <div class="carousel-item active">
                 <%= image_tag "projects/portfolio/portcarousel/home1.png", class: "d-block w-100", alt: "Home1" %>
             </div>
             <div class="carousel-item">
@@ -136,7 +137,7 @@
                 <%= image_tag "projects/portfolio/portcarousel/home3.png", class: "d-block w-100", alt: "Home3" %>
             </div>
             <div class="carousel-item">
-                <img src="https://www.thames-exams.co.uk/wp-content/uploads/2018/01/Placeholder.png" class="d-block w-100" alt="Portfolio">
+                <%= image_tag "projects/portfolio/portcarousel/contacts.png", class: "d-block w-100", alt: "contacts" %>
             </div>
             <div class="carousel-item">
                 <img src="https://www.thames-exams.co.uk/wp-content/uploads/2018/01/Placeholder.png" class="d-block w-100" alt="Contacts">
@@ -186,15 +187,6 @@
                 said stylesheet classes & ID's still laid a mystery. In future, I would potentially use TailwindCSS in order to remove this
                 issue as it forgoes the ideal of a dedicated stylesheet and approaches the idea of a more HTML-first approach to styling.
                 This would work well considering Hotwire (the default Rails 7 frontend) works by the same paradigm.</p>
-            </li>
-            <li>
-                <h5>Bootstrap/Rails 7 lack of compatibility with Forms</h5>
-                <p>Having tackled the implementation of live-chat and contact forms within the website a number of 3 times, I found
-                myself stuck. It seemed that the traditional pretty Bootstrap forms did not work with the forms Rails seemed to deal in.
-                Over much trepidation, I bowed to the functional properties of the Rails forms, which whilst working did not look pretty!
-                In future, TailwindCSS may be used to make the traditional Rails forms look better, or perhaps there was documentation on
-                the Rails forms helpers in which I missed, either way I would take some more time to create a better-optimized and PRETTIER
-                contact form!</p>
             </li>
         </ul>
     </div>
