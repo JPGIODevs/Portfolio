@@ -65,6 +65,8 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  config.action_mailer.add_delivery_method :ses
+
   config.x.mail_from = %(jpgiodevelopments<no-reply@jpgiodevelopments.com>)
   config.action_mailer.default_url_options = { host: 'jpgiodevelopments.com' }
   config.action_mailer.raise_delivery_errors = true
