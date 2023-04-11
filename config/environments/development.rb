@@ -42,8 +42,6 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
 
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.default_url_options = { host: "localhost", port: 3000 }
-  config.action_mailer.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
     :user_name => ENV['MAILGUN_SMTP_LOGIN'],
