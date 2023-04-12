@@ -22,5 +22,3 @@ document.addEventListener("turbo:load", (event) =>{
     hiddenElements.forEach((el) => observer.observe(el));
 })
 
-
-//window.alert("working");

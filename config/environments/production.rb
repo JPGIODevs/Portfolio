@@ -47,7 +47,7 @@ Rails.application.configure do
   # config.action_cable.allowed_request_origins = [ "http://example.com", /http:\/\/example.*/ ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # config.force_ssl = true
+  config.force_ssl = true
 
   # Include generic and useful information about system operation, but avoid logging too much
   # information to avoid inadvertent exposure of personally identifiable information (PII).
@@ -64,16 +64,17 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "railsportfolio_production"
 
   config.action_mailer.perform_caching = false
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
 
-  config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
-    port:                 '587',
-    domain:               'gmail.com',
-    user_name:            Rails.application.credentials.dig(:email, :user),
-    password:             Rails.application.credentials.dig(:email, :password),
-    authentication:       :plain,
-    tls:                  true,
-    enable_starttls_auto: true
+  ActionMailer::Base.smtp_settings = {
+    :user_name => ENV['MAILGUN_SMTP_LOGIN'],
+    :password => ENV['MAILGUN_SMTP_PASSWORD'],
+    :address => ENV['MAILGUN_SMTP_SERVER'],
+    :port => ENV['MAILGUN_SMTP_PORT'],
+    #:domain => "gmail.com",
+    :authentication => :plain,
+    :enable_starttls_auto => true
   }
 
   # Ignore bad email addresses and do not raise email delivery errors.

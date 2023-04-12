@@ -42,15 +42,13 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
 
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.default_url_options = { host: "localhost", port: 3000 }
-  config.action_mailer.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
-    :user_name => "jpgiodevelopments@gmail.com",
-    :password => "",
-    :address => 'smtp.gmail.com',
-    :port => 587,
-    :domain => "gmail.com",
+    :user_name => ENV['MAILGUN_SMTP_LOGIN'],
+    :password => ENV['MAILGUN_SMTP_PASSWORD'],
+    :address => ENV['MAILGUN_SMTP_SERVER'],
+    :port => ENV['MAILGUN_SMTP_PORT'],
+    #:domain => "gmail.com",
     :authentication => :plain,
     :enable_starttls_auto => true
   }

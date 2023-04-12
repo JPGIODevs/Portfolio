@@ -12,7 +12,6 @@ class ContactsController < ApplicationController
     else
       flash.now[:error] = "cannot send message."
       render "new"
-
     end
   end
 end
