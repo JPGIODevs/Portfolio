@@ -25,6 +25,12 @@ footer{
     left: 0;
     width: 100%;
 }
+.gradient {
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+    background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+}
 .link {
     text-decoration: none;
 }

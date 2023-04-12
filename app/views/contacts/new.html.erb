@@ -1,15 +1,14 @@
 <%= stylesheet_link_tag "contacts"%>
 
 <div class="container mt-5 pt-5">
-    <h1 id="page-title">Contacts</h1>
+    <h1 id="page-title" class="gradient">CONTACTS</h1>
     <br/>
     <h5>As a goal-chaser and Engineer at heart, I always love hearing from new people with exciting prospects
     for future developments. If you have any queries or propositions, feel free to contact me in the following form...</h5>
     <br/>
     <p>Alternatively, scroll below to see my socials :)</p>
-    <br/>
 
-    <div class="skinny_wrapper wrapper_padding text-left mb-5 pb-5">
+    <div class="skinny_wrapper text-left mb-5 pb-5">
         <%= form_with model: @contact do |form|%>
 
             <div class="mb-3">

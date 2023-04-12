@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   root 'home#index' #<< created a root for home on normal home rather than home/index
 #contacts app
   get 'contacts/new'
+  get 'contacts/create'
 end
