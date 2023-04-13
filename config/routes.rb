@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
+  resources :articles do
+    resources :comments
+  end
 
 #projects app
   get 'projects/portfolio'
@@ -15,4 +18,7 @@ Rails.application.routes.draw do
 #contacts app
   get 'contacts/new'
   get 'contacts/create'
+#blogs app
+  get 'articles/', to: 'articles#index'
+  get 'articles/:id', to: "articles#show"
 end
