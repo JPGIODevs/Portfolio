@@ -3,7 +3,7 @@
 <div class="container article-padding mt-5 pt-5">
     <h1>Blog Articles</h1>
 
-    <h5>Our blog has <%= Article.public_count %> articles and counting!</h5>
+    <h5 class="mb-3 pb-3">Our blog has <%= Article.public_count %> articles and counting!</h5>
 
     <ul>
         <% @articles.each do |article| %>
@@ -16,6 +16,6 @@
             <% end %>
         <% end %>
     </ul>
-
-    <%= link_to "New Article", new_article_path %>
+    <br/>
+    <%= link_to "New Article", new_article_path, class: "btn btn-outline-light link" %>
 </div>
