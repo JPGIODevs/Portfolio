@@ -12,14 +12,14 @@ default: &default
 development:
   <<: *default
   database: portfolio_dev
-  username: root
-  password:
+  username: portfolio_dev
+  password: password123
 
 test:
   <<: *default
   database: portfolio_test
-  username: root
-  password:
+  username: portfolio_test
+  password: password1234
 
 
 
