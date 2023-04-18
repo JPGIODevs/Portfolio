@@ -1,0 +1,37 @@
+# PostgreSQL. Versions 9.3 and up are supported.
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  port: 5432
+  # For details on connection pooling, see Rails configuration guide
+  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: portfolio_dev
+  username: root
+  password:
+  #database: <%= Rails.application.credentials.DB_NAME.dev_db %>
+  #username: <%= Rails.application.credentials.DB_USERNAME.dev_db %>
+  #password: <%= Rails.application.credentials.DB_PASSWORD.dev_db %>
+
+test:
+  <<: *default
+  database: portfolio_test
+  username: root
+  password:
+  #database: <%= Rails.application.credentials.DB_NAME.test_db %>
+  #username: <%= Rails.application.credentials.DB_USERNAME.test_db %>
+  #password: <%= Rails.application.credentials.DB_PASSWORD.test_db %>
+
+
+production:
+  <<: *default
+  database: portfolio_prod
+  #database: <%= Rails.application.credentials.DB_NAME.prod_db %>
+  #username: <%= Rails.application.credentials.DB_USERNAME.prod_db %>
+  #password: <%= Rails.application.credentials.DB_PASSWORD.prod_db %>
+
