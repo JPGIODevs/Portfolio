@@ -1,8 +1,7 @@
-// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
-//= require_self
-
 import "@hotwired/turbo-rails"
 import "controllers"
+import "trix"
+import "@rails/actiontext"
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -21,4 +20,3 @@ document.addEventListener("turbo:load", (event) =>{
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe(el));
 })
-

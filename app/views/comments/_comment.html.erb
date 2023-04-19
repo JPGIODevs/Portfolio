@@ -1,4 +1,10 @@
+<!-- COMMENT PARTIAL -->
+
+<!-- PARTIAL, LOADED BASED ON IF COMMENT IS ARCHIVED OR NOT -->
 <% unless comment.archived? %>
+
+  <!-- LOADING COMMENTS FROM DATABASE -->
+
   <p>
     <strong>Commenter:</strong>
     <%= comment.commenter %>
@@ -9,6 +15,7 @@
     <%= comment.body %>
   </p>
 
+  <!-- LINK TO COMMENT CONTROLLER TO ALLOW DELETION -->
   <p>
     <%= link_to "Destroy Comment", [comment.article, comment], data: {
                   turbo_method: :delete,

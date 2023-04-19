@@ -1,21 +1,30 @@
+<!-- CONTAINER FOR SHOWING ARTICLE (REFERENCED IN ROUTE BASED ON :id TAG) -->
 <div class="container article-padding mt-5 pt-5">
+
+  <!-- ALL @article REFERENCES TO Article[params :id] FOUND IN ARTICLES CONTROLLER -->
+
   <h1 class="gradient mb-4 pb-4"><%= @article.title %></h1>
 
-  <p class="mb-2 pb-2"><%= @article.body %></p>
+  <div class="mb-2 pb-2" style="color:white;"><%= @article.content %></div>
 
   <div class="mb-3 pb-3">
-    <%= link_to edit_article_path(@article), class: "link" do %>
-      <button type="button" class="btn btn-outline-light">Edit</button>
-    <% end %>
+    <!-- LINK TO EDIT ARTICLE FUNCTION -->
+    <% if user_signed_in? %>
+      <%= link_to edit_article_path(@article), class: "link" do %>
+        <button type="button" class="btn btn-outline-light">Edit</button>
+      <% end %>
 
-    <%= link_to article_path(@article), data: {
-      turbo_method: :delete,
-      turbo_confirm: "Are you sure?"
-    }, class: "link" do %>
-      <button type="button" class="btn btn-outline-light">Delete</button>
+      <!-- LINK TO DELETE ARTICLE FUNCTION W AUTHENTICATION -->
+      <%= link_to article_path(@article), data: {
+        turbo_method: :delete,
+        turbo_confirm: "Are you sure?"
+      }, class: "link" do %>
+        <button type="button" class="btn btn-outline-light">Delete</button>
+      <% end %>
     <% end %>
   </div>
 
+  <!-- COMMENT STUFF, WHY AM I SHOUTING? Thats better :) -->
   <h2>Comments</h2><br>
   <%= render @article.comments %>
 

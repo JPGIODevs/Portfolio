@@ -1,21 +1,26 @@
 <%= stylesheet_link_tag "articles"%>
 
+<!-- CONTAINER FOR BLOG ARTICLES -->
 <div class="container article-padding mt-5 pt-5">
     <h1>Blog Articles</h1>
 
+    <!-- COUNTER FOR BLOGS REFERENCING ARTICLE PUBLIC COUNT -->
     <h5 class="mb-3 pb-3">Our blog has <%= Article.public_count %> articles and counting!</h5>
 
+    <!-- LIST OF FETCHED BLOG ARTICLES FROM POSTGRES DATABASE -->
     <ul>
         <% @articles.each do |article| %>
             <% unless article.archived? %>
                 <li>
                     <%= link_to article.title, article%>
                     <br/>
-                    <p><%= article.body %></p>
+                    <p><%= article.content %></p>
                 </li>
             <% end %>
         <% end %>
     </ul>
     <br/>
+
+    <!-- LINK TO NEW ARTICLE PATH -->
     <%= link_to "New Article", new_article_path, class: "btn btn-outline-light link" %>
 </div>
