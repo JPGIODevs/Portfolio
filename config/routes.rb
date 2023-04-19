@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  
+
   resources :contacts, only: [:new, :create]
   resources :articles do
     resources :comments
