@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'projects/placeholder'
   #unfinishing projects :) route as needed
   get 'projects/manifold' => redirect("projects/placeholder")
-  get 'projects/tauritasks' => redirect("projects/placeholder")
+  get 'projects/gotasks' => redirect("projects/placeholder")
   get 'projects/ps1horror' => redirect("projects/placeholder")
   get 'projects/twilioAI' => redirect("projects/placeholder")
   get 'projects/reader' => redirect("projects/placeholder")
