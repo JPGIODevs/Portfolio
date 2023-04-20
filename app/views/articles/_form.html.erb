@@ -1,6 +1,6 @@
 <!-- REUSABLE PARTIAL FOR EDIT/NEW BLOG POST -->
 
-<%= form_with model: @article do |form| %>
+<%= form_with model: @article, authenticity_token: true do |form| %>
   <div class="mb-3" style="color:white;">
     <%= form.label :title, class: "form-label label" %><br>
     <%= form.text_field :title, class: "form-control" %>
