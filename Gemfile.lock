@@ -268,7 +268,7 @@ DEPENDENCIES
   devise (~> 4.9)
   dockerfile-rails (>= 1.2)
   hotwire-rails
-  image_processing (~> 1.2)
+  image_processing (>= 1.2)
   importmap-rails
   jbuilder
   mail_form
