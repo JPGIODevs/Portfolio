@@ -11,7 +11,7 @@
 
   <div class="mb-3" style="color:white;">
     <%= form.label :content, class: "form-label" %><br>
-    <%= form.rich_text_area :content, class: "form-control" %>
+    <%= form.rich_text_area :content, class: "form-control", direct_upload: true %>
     <% @article.errors.full_messages_for(:content).each do |message| %>
       <div><%= message %></div>
     <% end %>
