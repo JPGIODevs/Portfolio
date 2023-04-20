@@ -11,8 +11,8 @@ amazon:
    service: S3
    #access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
    #secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
-   access_key_id: AKIAW2UI7V5FFXN34Q7S
-   secret_access_key: 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
+   access_key_id: ENV['AWS_KEY_ID']
+   secret_access_key: ENV['AWS_SECRET_KEY']
    region: eu-north-1
    bucket: rorportbucket
    public: true
