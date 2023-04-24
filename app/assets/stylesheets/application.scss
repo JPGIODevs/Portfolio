@@ -28,6 +28,7 @@ footer{
 .gradient {
     background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     font-weight: bolder;
 }

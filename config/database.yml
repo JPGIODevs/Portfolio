@@ -11,15 +11,14 @@ default: &default
 
 development:
   <<: *default
-  database: portfolio_dev
-  username: portfolio_dev
-  password: password123
-
+  database: jxck
+  username: jxck
+  password: hondacbr2001
 test:
   <<: *default
-  database: portfolio_test
-  username: portfolio_test
-  password: password1234
+  database: jxck
+  username: jxck
+  password: hondacbr2001
 
 
 
