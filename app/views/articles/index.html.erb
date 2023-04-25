@@ -5,16 +5,23 @@
     <h1>Blog Articles</h1>
 
     <!-- COUNTER FOR BLOGS REFERENCING ARTICLE PUBLIC COUNT -->
-    <h5 class="mb-3 pb-3">Our blog has <%= Article.public_count %> articles and counting!</h5>
+    <p class="mb-3 pb-3">Our blog has <%= Article.public_count %> articles and counting!</p>
 
     <!-- LIST OF FETCHED BLOG ARTICLES FROM POSTGRES DATABASE -->
     <ul>
         <% @articles.each do |article| %>
             <% unless article.archived? %>
                 <li>
-                    <%= link_to article.title, article%>
+                    <%if article.cover_image.present? %>
+                        <%= image_tag article.cover_image, class: "coverimg" %>
+                    <% end %>
                     <br/>
-                    <p><%= article.content %></p>
+                    <%= link_to article do %>
+                        <h1 class="title"><%= article.title %></h1>
+                    <% end%>
+                    <%if article.header.present? %>
+                        <p><%= article.header %></p>
+                    <% end %>
                 </li>
             <% end %>
         <% end %>

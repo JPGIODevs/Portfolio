@@ -10,6 +10,14 @@
   </div>
 
   <div class="mb-3" style="color:white;">
+    <%= form.label :header, class: "form-label label" %><br>
+    <%= form.text_field :header, class: "form-control" %>
+    <% @article.errors.full_messages_for(:header).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div class="mb-3" style="color:white;">
     <%= form.label :content, class: "form-label" %><br>
     <%= form.rich_text_area :content, class: "form-control", direct_upload: true %>
     <% @article.errors.full_messages_for(:content).each do |message| %>
@@ -18,8 +26,8 @@
   </div>
 
   <div class="mb-3" style="color:white;">
-    <%= form.label :picture, class: "form-label" %><br>
-    <%= form.file_field :picture, class: "form-control" %>
+    <%= form.label :cover_image, class: "form-label" %><br>
+    <%= form.file_field :cover_image, class: "form-control" %>
   </div>
 
   <div class="mb-3" style="color:white;">

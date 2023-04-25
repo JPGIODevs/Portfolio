@@ -1,8 +1,13 @@
-<!-- CONTAINER FOR SHOWING ARTICLE (REFERENCED IN ROUTE BASED ON :id TAG) -->
+<<%= stylesheet_link_tag "articles"%>
+  !-- CONTAINER FOR SHOWING ARTICLE (REFERENCED IN ROUTE BASED ON :id TAG) -->
 <div class="container article-padding mt-5 pt-5">
 
   <!-- ALL @article REFERENCES TO Article[params :id] FOUND IN ARTICLES CONTROLLER -->
-
+  <div class="covercontainer">
+    <%if @article.cover_image.present? %>
+      <%= image_tag @article.cover_image, class: "coverimg" %>
+    <% end %>
+  </div>
   <h1 class="gradient mb-4 pb-4"><%= @article.title %></h1>
 
   <div class="mb-2 pb-2" style="color:white;"><%= @article.content %></div>
