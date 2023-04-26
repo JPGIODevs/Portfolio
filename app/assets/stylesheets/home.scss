@@ -120,6 +120,7 @@ b.expt{
     transition: opacity 0.5s ease-out;
 }
 #goimg:hover{
+    object-fit: cover;
     opacity: 1;
 }
 #manifoldimg{
