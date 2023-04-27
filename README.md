@@ -1,14 +1,10 @@
 # README
 
 
-* Ruby version : 3.2.0
+* Ruby version : 3.2.2
 
 * System dependencies : Rails 7.0.4.2 
 
-* Configuration
+* Database : Postgres (hosted Heroku)
 
-* Database : Not-in-use [// small static portfolio for now :) //]
-
-* Will soon be deployed to web
-
-* ...
+* Deployed to : jpgiodevelopments.com
