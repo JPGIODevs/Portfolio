@@ -10,6 +10,9 @@
     width: 30vw;
     height: 53vh;
   }
+  .carousel-caption{
+    top: 45vh;
+  }
 }
 
 @media (max-width: 425px){
@@ -29,6 +32,9 @@
     border-radius: 30px;
     border: 3px solid rgba(255,255,255,0.1);
   }
+  .carousel-caption{
+    top: 25vh;
+  }
 }
 .c-item{
     width: 100%;
@@ -47,9 +53,6 @@
     text-align: center;
     width:100vw;
     padding-bottom: 3;
-}
-.carousel-caption{
-    top: 45vh;
 }
 @keyframes wooshtext {
     0% {transform: translateY(0%);}
