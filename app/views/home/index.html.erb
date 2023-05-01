@@ -16,7 +16,15 @@
             <p class="font-monospace caro-text fs-4">Satisfying Customers & Employers alike with <i>reliable, fast & scalable</i> solutions!</p>
 
             <!-- Contact socials images -->
-            <%= render "socials" %>
+            <div class="icon-wrapper mb-3">
+              <a href="https://www.instagram.com/jpgiodevs/"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077042.png" class="contacts-icon" alt="instaicon"></a>
+              <a href="https://github.com/JPGIODevs"><img src="https://cdn-icons-png.flaticon.com/512/1322/1322104.png" class="contacts-icon" alt="instaicon"></a>
+              <a href="mailto:jpgiodevelopments@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/2089/2089181.png" class="contacts-icon" alt="instaicon"></a>
+              <a href="https://www.linkedin.com/in/jack-packham-b197b6261/"><img src="https://cdn-icons-png.flaticon.com/512/2582/2582575.png" class="contacts-icon" alt="instaicon"></a>
+            </div>
+            <%= link_to "https://drive.google.com/file/d/138vcpur62476079_W1XzLPlEyyHcaj71/view?usp=sharing" do %>
+                <button type="button" class="btn btn-outline-light shadow resume-button">Download Resume</button>
+            <% end%>
         </div>
      </div>
     <!-- 2ND SLIDE -->
@@ -80,7 +88,8 @@
 <br/>
 
 <!-- ABOUT ME SECTION -->
-<div class="container pt-3 mt-3">
+<!-- DESKTOP VIEW :) -->
+<div class="container pt-3 mt-3 deskabout">
   <h1 class="hidden right-slide sectionheader mb-3 pb-3">About me</h1>
   <div class='row mt-3 pt-3'>
     <div class="col">
@@ -99,6 +108,21 @@
       in multiple STEM curriculums, including first-and-foremost, <b>Computer-Science.</b></p>
     </div>
   </div>
+</div>
+
+<!-- MOBILE VIEW :) -->
+<div class="container pt-3 mt-3 mobileabout">
+  <h1 class="hidden right-slide sectionheadermb-3 pb-3">About me</h1>
+  <%= image_tag "aboutimg.jpg", class: "rounded shadow-lg about-img"%>
+  <h2 class="mb-1 mt-3"><b>An insight to me...</b></h2>
+  <p>I am a <b>Jack, A Software developer and Entrepeneur</b>, founding my sole-proprietary business of <b>JPGIO Developments</b>
+  in Q1 of 2023 with major personal success! Having <b>over a decade</b> of experience within numerous sectors of
+  software development, ranging from <b>DevOps </b>(Delivery, dockerisation, Cloud) to <b>Data-Science</b>
+  (Pandas, Tensorflow, NumPy) to <b>Full-Stack developments</b> (Rails, svelte, bootstrap, HTML/CSS/JS).</p>
+  <p>Such examples, <b>including this very website</b>, are documented below.
+  As well as the experienced background, I also have an extensive academic background in the business sector which adds
+  <b>further value</b> to my work as a professional Software Developer. This includes GSCE's and A-levels to grade-A standards
+  in multiple STEM curriculums, including first-and-foremost, <b>Computer-Science.</b></p>  
 </div>
 
 <!-- EXPERTISE SECTION -->
