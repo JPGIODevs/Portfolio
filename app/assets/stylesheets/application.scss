@@ -1,3 +1,9 @@
+@media all and (max-width: 425px){
+
+  body{
+    color: white;  
+  }
+}
 body {
     height: 100%;
     width: 100dvw;
@@ -103,7 +109,7 @@ footer{
 .top-shape svg {
     position: relative;
     display: block;
-    width: calc(112% + 1.3px);
+    width: 100dvw;
     height: 174px;
     transform: rotateY(180deg);
     opacity: 60%;
@@ -126,7 +132,7 @@ footer{
     position: relative;
     bottom: 0;
     display: block;
-    width: calc(100% + 1.3px);
+    width: 100dvw;
     height: 242px;
 }
 .footer-shape .shape-fill {

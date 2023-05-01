@@ -1,3 +1,35 @@
+@media (min-width: 425px){
+  .deskabout{
+    display: block;
+  }
+  .mobileabout{
+    display: none;
+  }
+  .about-img{
+    position: absolute;
+    width: 30vw;
+    height: 53vh;
+  }
+}
+
+@media (max-width: 425px){
+  .deskabout{
+    display: none;
+  }
+  .mobileabout{
+    display: block;
+    color: white;
+    text-align: center;
+  }
+  .about-img{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    object-position: none;
+    border-radius: 30px;
+    border: 3px solid rgba(255,255,255,0.1);
+  }
+}
 .c-item{
     width: 100%;
     height: 100dvh;
@@ -7,7 +39,7 @@
     object-position: center;
     height: 100%;
     filter: brightness(0.8);
-}
+} 
 .my-carousel{
     position: absolute;
     top: 0;
@@ -45,7 +77,7 @@
 .pretty-shape svg {
     position: relative;
     display: block;
-    width: calc(112% + 1.3px);
+    width: 100dvw;
     height: 174px;
     transform: scale(1, -1) translate(0,-100) rotateY(180deg);
     opacity: 5%;
@@ -59,12 +91,16 @@
     margin-left: 0;
 }
 .about-img{
-    position: absolute;
-    width: 30vw;
-    height: 53vh;
     object-fit: cover;
     object-position: 80% 20%;
     margin-right: 0;
+}
+.exptcontainer{
+  padding: 20% 5% 5% 5%;
+}
+.expticon{
+  filter: invert(1);
+  width: 25%;
 }
 .expertise-container{
     padding-left: 3vw;
