@@ -5,6 +5,12 @@
   .mobileabout{
     display: none;
   }
+  .deskexpertise{
+    display: block;
+  }
+  .mobileexpertise{
+    display: none;
+  }
   .about-img{
     position: absolute;
     width: 30vw;
@@ -27,6 +33,13 @@
     color: white;
     text-align: center;
   }
+  .deskexpertise{
+    display: none;
+  }
+  .mobileexpertise{
+    display: block;
+  }
+
   .about-img{
     position: relative;
     height: 50vh;

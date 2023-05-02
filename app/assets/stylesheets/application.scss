@@ -1,3 +1,16 @@
+@media (min-width: 425px){
+  .contacts-icon{
+    width: 8%;
+    padding: 0 25px 0;
+  }
+}
+
+@media (max-width: 425px){
+  .contacts-icon{
+    width: 20%;
+    padding: 0 15px 0;
+  } 
+}
 body {
     height: 100%;
     width: 100dvw;
@@ -180,17 +193,6 @@ footer{
 }
 .contacts-icon{
     filter: invert(1);
-    height: 8%;
-    width: 8%;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-.contacts-icon .small{
-    filter: invert(1);
-    height: 3%;
-    width: 3%;
-    padding-left: 25px;
-    padding-right: 25px;
 }
 .cardimg{
     width: 100%;

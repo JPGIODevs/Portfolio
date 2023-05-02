@@ -74,7 +74,7 @@
     </div>
     <div class="col about-desc hidden">
       <h2 style="margin-bottom:15px;"><b>An insight to me...</b></h2>
-      <p>I am a <b>Jack, A Software developer and Entrepeneur</b>, founding my sole-proprietary business of <b>JPGIO Developments</b>
+      <p>I am <b>Jack, A Software developer and Entrepeneur</b>, founding my sole-proprietary business of <b>JPGIO Developments</b>
         in Q1 of 2023 with major personal success! Having <b>over a decade</b> of experience within numerous sectors of
         software development, ranging from <b>DevOps </b>(Delivery, dockerisation, Cloud) to <b>Data-Science</b>
         (Pandas, Tensorflow, NumPy) to <b>Full-Stack developments</b> (Rails, svelte, bootstrap, HTML/CSS/JS).</p>
@@ -90,8 +90,9 @@
 <div class="container pt-3 mt-3 mobileabout">
   <h1 class="hidden right-slide sectionheadermb-3 pb-3">About me</h1>
   <%= image_tag "aboutimg.jpg", class: "rounded shadow-lg about-img"%>
-  <h2 class="mb-1 mt-3"><b>An insight to me...</b></h2>
-  <p>I am a <b>Jack, A Software developer and Entrepeneur</b>, founding my sole-proprietary business of <b>JPGIO Developments</b>
+  <h2 class="mt-3"><b>I am Jack</b></h2>
+  <h5 class="mb-3">Software developer & Entrepeneur</h5>  
+  <p>Founding my sole-proprietary business of <b>JPGIO Developments</b>
   in Q1 of 2023 with major personal success! Having <b>over a decade</b> of experience within numerous sectors of
   software development, ranging from <b>DevOps </b>(Delivery, dockerisation, Cloud) to <b>Data-Science</b>
   (Pandas, Tensorflow, NumPy) to <b>Full-Stack developments</b> (Rails, svelte, bootstrap, HTML/CSS/JS).</p>
@@ -102,7 +103,8 @@
 </div>
 
 <!-- EXPERTISE SECTION -->
-<div class="container expertise">
+<!-- DESKTOP VIEW :) -->  
+<div class="container expertise deskexpertise">
   <div class='container exptcontainer'>
     <h1 class="hidden left-slide sectionheader">Expertise</h1>
     <br/>
@@ -151,7 +153,7 @@
 
     <!-- 3rd row, descriptions -->
 
-    <div class="row align-items-start expertise row-cols-4 g-2 mt-3 font-monospace";">
+    <div class="row align-items-start expertise row-cols-4 g-2 mt-3 font-monospace";>
       <div class="col">
         <h5 class="expt"><b class="expt">Over a Decade</b> of experience in <i>OOP</i> and <i>Functional Software Development</i>.
         Starting with <b class="expt">BATCH & C#</b>,<br/> working into using <b class="expt">Python, Rust,  Ruby, C/C++ & JS/TS</b> professionally.</h5>
@@ -174,6 +176,11 @@
     </div>
   </div>
 </div>
+
+<!-- MOBILE VIEW :) -->
+<%= link_to projects_path, class:"text-center mt-5 pt-5" do %>
+  <h1> GO TO PROJECTS </h1>
+<% end %>
 
 <!-- PROJECTS SECTION -->
 <div class="container hidden right-slide" style="padding-top:35vh;">
