@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :user
 
   resources :contacts, only: [:new, :create]
   resources :articles do
@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   end
 
 #projects app
+  get 'projects/', to: 'projects#index'
   get 'projects/portfolio'
   get 'projects/placeholder'
   #unfinishing projects :) route as needed

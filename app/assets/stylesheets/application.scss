@@ -192,3 +192,70 @@ footer{
     padding-left: 25px;
     padding-right: 25px;
 }
+.cardimg{
+    width: 100%;
+    height: 100%;
+}
+#rubyimg{
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+#rubyimg:hover{
+    opacity: 1;
+}
+#goimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+#goimg:hover{
+    object-fit: cover;
+    opacity: 1;
+}
+#manifoldimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+#manifoldimg:hover{
+    opacity: 1;
+}
+#csharpimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+#csharpimg:hover{
+    opacity: 1;
+}
+#botimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+#botimg:hover{
+    opacity: 1;
+}
+#readerimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+#readerimg:hover{
+    opacity: 1;
+}
+

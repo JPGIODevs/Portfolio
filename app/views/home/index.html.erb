@@ -13,7 +13,7 @@
         <%= image_tag "caro1.avif", class: "d-block w-100 c-img", alt: "slide1" %>
         <div class="carousel-caption d-md-block">
             <h1 class="mb-3 caro-text fs-1">First-class Experience with <b>AppDev, WebDev & DevOps</b></h1>
-            <p class="font-monospace caro-text fs-4">Satisfying Customers & Employers alike with <i>reliable, fast & scalable</i> solutions!</p>
+            <p class="font-monospace caro-text">Satisfying Customers & Employers alike with <i>reliable, fast & scalable</i> solutions!</p>
 
             <!-- Contact socials images -->
             <%= render "socials" %>
@@ -23,8 +23,8 @@
     <div class="carousel-item c-item">
       <%= image_tag "caro2.png", class: "d-block w-100 c-img", alt: "slide2" %>
       <div class="carousel-caption d-md-block">
-        <h1 class="mb-3 caro-text fs-1"><b>Passion</b> in modern technology</h1>
-        <p class="font-monospace caro-text fs-4">Heavily invested into future technologies such as <i>Rust, Svelte, Pocketbase, SurrealDB</i> & more!</p>
+        <h1 class="mb-3 caro-text fs-1"><b>Passion</b> in modern technology<br/>(Tauri, WASM, Deno & more!)</h1>
+        <p class="font-monospace caro-text">Heavily invested into future technologies such as <i>Rust, Svelte, Pocketbase, SurrealDB</i> & more!</p>
 
         <!-- Contact socials images -->
         <%= render "socials" %>
@@ -34,8 +34,8 @@
     <div class="carousel-item c-item">
       <%= image_tag "caro3.avif", class: "d-block w-100 c-img", alt: "slide3" %>
       <div class="carousel-caption d-md-block">
-        <h1 class="mb-3 caro-text fs-1">Delivering solutions that just <b>Work!</b></h1>
-        <p class="font-monospace caro-text fs-4">Utilising existing technologies with mature codebases to develop products that <i>work reliably!</i></p>
+        <h1 class="mb-3 caro-text fs-1">Delivering solutions that just <b>Work!</b> Deployment without a hitch...</h1>
+        <p class="font-monospace caro-text">Utilising existing technologies with mature codebases to develop products that <i>work reliably!</i></p>
 
         <!-- Contact socials images -->
         <%= render "socials" %>
@@ -136,17 +136,16 @@
 
     <div class="row align-items-center expertise row-cols-4 g-2 mt-1">
       <div class="col">
-        <img src="https://cdn-icons-png.flaticon.com/512/4299/4299932.png" class="expticon" style="width:30%;">
+        <img src="https://cdn-icons-png.flaticon.com/512/4299/4299932.png" class="expticon w-30">
+      </div>
+      <div class="col"> 
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968566.png" class="expticon">
       </div>
       <div class="col">
-       class="expticon" 
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968566.png" >
+        <img src="https://cdn-icons-png.flaticon.com/512/831/831378.png" class="expticon">
       </div>
       <div class="col">
-        <img src="https://cdn-icons-png.flaticon.com/512/831/831378.png" style="filter:invert(1); width:25%;">
-      </div>
-      <div class="col">
-        <img src="https://cdn-icons-png.flaticon.com/512/5815/5815886.png" style="filter:invert(1);width:25%">
+        <img src="https://cdn-icons-png.flaticon.com/512/5815/5815886.png" class="expticon">
       </div>
     </div>
 
@@ -175,6 +174,7 @@
     </div>
   </div>
 </div>
+
 <!-- PROJECTS SECTION -->
 <div class="container hidden right-slide" style="padding-top:35vh;">
   <h1 class="sectionheader">Projects</h1>
