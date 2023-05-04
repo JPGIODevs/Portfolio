@@ -1,14 +1,8 @@
 @media (min-width: 425px){
-  .deskabout{
+  .desktop{
     display: block;
   }
-  .mobileabout{
-    display: none;
-  }
-  .deskexpertise{
-    display: block;
-  }
-  .mobileexpertise{
+  .mobile{
     display: none;
   }
   .about-img{
@@ -25,21 +19,12 @@
 }
 
 @media (max-width: 425px){
-  .deskabout{
+  .desktop{
     display: none;
   }
-  .mobileabout{
-    display: block;
-    color: white;
-    text-align: center;
-  }
-  .deskexpertise{
-    display: none;
-  }
-  .mobileexpertise{
+  .mobile{
     display: block;
   }
-
   .about-img{
     position: relative;
     height: 50vh;

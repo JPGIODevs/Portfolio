@@ -1,0 +1,202 @@
+<!-- ABOUT ME SECTION -->
+<!-- DESKTOP VIEW :) -->
+<div class="container pt-3 mt-3 desktop">
+  <h1 class="hidden right-slide sectionheader mb-3 pb-3">About me</h1>
+  <div class='row mt-3 pt-3'>
+    <div class="col">
+      <%= image_tag "aboutimg.jpg", class: "rounded shadow-lg about-img"%>
+      <br/>
+    </div>
+    <div class="col about-desc hidden">
+      <h2 style="margin-bottom:15px;"><b>An insight to me...</b></h2>
+      <p>I am <b>Jack, A Software developer and Entrepeneur</b>, founding my sole-proprietary business of <b>JPGIO Developments</b>
+        in Q1 of 2023 with major personal success! Having <b>over a decade</b> of experience within numerous sectors of
+        software development, ranging from <b>DevOps </b>(Delivery, dockerisation, Cloud) to <b>Data-Science</b>
+        (Pandas, Tensorflow, NumPy) to <b>Full-Stack developments</b> (Rails, svelte, bootstrap, HTML/CSS/JS).</p>
+      <p>Such examples, <b>including this very website</b>, are documented below.
+      As well as the experienced background, I also have an extensive academic background in the business sector which adds
+      <b>further value</b> to my work as a professional Software Developer. This includes GSCE's and A-levels to grade-A standards
+      in multiple STEM curriculums, including first-and-foremost, <b>Computer-Science.</b></p>
+    </div>
+  </div>
+</div>
+
+<!-- EXPERTISE SECTION -->
+<!-- DESKTOP VIEW :) -->  
+<div class="container expertise desktop">
+  <div class='container exptcontainer'>
+    <h1 class="hidden left-slide sectionheader">Expertise</h1>
+    <br/>
+  </div>
+  <!-- 1st row, names and chonky underlines -->
+  <div class="hidden expertise-container">
+    <div class="row align-items-end expertise row-cols-4 g-2 pt-3 mt-4">
+
+      <div class="col">
+        <h3 class="font-monospace text-white chonkyblue">Software Dev</h3>
+        <br/>
+        </div>
+
+      <div class="col">
+        <h3 class="font-monospace text-white chonkyorange">Web Development</h3>
+        <br/>
+        </div>
+
+      <div class="col">
+        <h3 class="font-monospace text-white chonkygreen">Mobile Solutions</h3>
+        <br/>
+        </div>
+
+      <div class="col">
+        <h3 class="font-monospace text-white chonkypurple">Databases</h3>
+        <br/>
+        </div>
+    </div>
+
+    <!-- 2nd row, icons -->
+
+    <div class="row align-items-center expertise row-cols-4 g-2 mt-1">
+      <div class="col">
+        <img src="https://cdn-icons-png.flaticon.com/512/4299/4299932.png" class="expticon w-30">
+      </div>
+      <div class="col"> 
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968566.png" class="expticon">
+      </div>
+      <div class="col">
+        <img src="https://cdn-icons-png.flaticon.com/512/831/831378.png" class="expticon">
+      </div>
+      <div class="col">
+        <img src="https://cdn-icons-png.flaticon.com/512/5815/5815886.png" class="expticon">
+      </div>
+    </div>
+
+    <!-- 3rd row, descriptions -->
+
+    <div class="row align-items-start expertise row-cols-4 g-2 mt-3 font-monospace";>
+      <div class="col">
+        <h5 class="expt"><b class="expt">Over a Decade</b> of experience in <i>OOP</i> and <i>Functional Software Development</i>.
+        Starting with <b class="expt">BATCH & C#</b>,<br/> working into using <b class="expt">Python, Rust,  Ruby, C/C++ & JS/TS</b> professionally.</h5>
+      </div>
+      <div class="col">
+        <h5 class="expt"><b class="expt">Extensive experience</b> across a range of
+        <b class="expt">Frontend & Backend technologies</b>. Examples are a <i>Huge Background</i> in
+        <b class=expt>Rails + Hotwire & SvelteKit</b> as well as <b class=expt>HTML/CSS/JS & Bootstrap + TailwindCSS for UI.</b></h5>
+      </div>
+      <div class="col">
+        <h5 class="expt">Projects such as <b class="expt">Tauri-Tasks & READER ebook</b>
+        Demonstrate my <b class="expt">ability to design, plan and create</b> Cross-Platform <i>Mobile Applications</i>
+        using technologies such as <b class="expt">Flutter, Swift and Tauri.</b></h5>
+      </div>
+      <div class="col">
+        <h5 class="expt"><b class="expt">Full-stack Development</b> has pushed me
+        to be efficient in <b class="expt">SQLite3, MySQL, REDIS & PostgreS</b> as well as using
+        platforms such as <b class="expt">Docker routinely!</b> Ensuring <i>Delivery, Modularity & Scalability!</i></h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECTS SECTION -->
+<!-- desktop view :) -->
+<div class="desktop">
+  <div class="container hidden right-slide desktop" style="padding-top:35vh;">
+    <h1 class="sectionheader">Projects</h1>
+  </div>
+
+  <!-- ROWS FOR PROJECTS SECTION CARDS -->
+  <div class="row row-cols-3 row-cols-md-3 g-4 p-5">
+    <%= link_to projects_portfolio_path, class: "link" do %>
+      <div class="col">
+        <!-- RAILS PROJECT CARD -->
+        <div class="card hidden bg-dark border-secondary">
+          <div class="image-wrapper">
+            <%= image_tag "project-cards/hover/card1.gif", class: "cardimg", alt: "rubyhover", id: "rubyimg"%>
+            <%= image_tag "project-cards/card1.png", class: "cardimg", alt: "rubyanimate"%>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title card-header"><b>On-Rails Portfolio</b></h5>
+            <p class="card-text">A ruby-on-rails portfolio, integrating <b>SQLite3</b> and <b>Bootstrap 5</b> to create a response, reactive & scalable personal portfolio.</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+
+    <%= link_to projects_gotasks_path, class: "link" do %>
+      <div class="col">
+        <!-- GO-TASKS PROJECT CARD -->
+        <div class="card hidden bg-dark border-secondary">
+          <div class="image-wrapper">
+            <%= image_tag "project-cards/hover/card2.gif", class: "cardimg", alt: "gohover", id: "goimg"%>
+            <%= image_tag "project-cards/card2.png", class: "cardimg", alt: "goanimate"%>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title card-header"><b>GO Tasks</b></h5>
+            <p class="card-text">A conceptual task-manager and notepad made for cross-platform usage via using the Wails framework with GO (lang)</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <%= link_to projects_manifold_path, class: "link" do %>
+      <div class="col">
+        <!-- Manifold-chat PROJECT CARD -->
+        <div class="card hidden bg-dark border-secondary">
+          <div class="image-wrapper">
+            <%= image_tag "https://www.thames-exams.co.uk/wp-content/uploads/2018/01/Placeholder.png", class: "cardimg", alt: "manifoldhover", id: "manifoldimg"%>
+            <%= image_tag "project-cards/card6.png", class: "cardimg", alt: "manifoldanimate"%>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title card-header"><b>Manifold Chat</b></h5>
+            <p class="card-text">A real-time chat app created using Ruby-on-Rails alongside Hotwire (Turbo-streams), with an Electron desktop-app.</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <%= link_to projects_ps1horror_path, class: "link" do %>
+      <div class="col">
+        <!-- PS1 C# GAME PROJECT CARD -->
+        <div class="card hidden bg-dark border-secondary">
+          <div class="image-wrapper">
+            <%= image_tag "https://www.thames-exams.co.uk/wp-content/uploads/2018/01/Placeholder.png", class: "cardimg", alt: "csharphover", id: "csharpimg"%>
+            <%= image_tag "project-cards/card3.png", class: "cardimg", alt: "csharpanimate"%>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title card-header"><b>PS1-styled C# game</b></h5>
+            <p class="card-text">A short horror game in the style of a Playstation-1 console, Utlising the Unity engine & C#</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <%= link_to projects_twilioAI_path, class: "link" do %>
+      <div class="col">
+        <!-- GPT3/TWILIO SMSBOT PROJECT CARD -->
+        <div class="card hidden bg-dark border-secondary">
+          <div class="image-wrapper">
+            <%= image_tag "https://www.thames-exams.co.uk/wp-content/uploads/2018/01/Placeholder.png", class: "cardimg", alt: "bothover", id: "botimg"%>
+            <%= image_tag "project-cards/card4.png", class: "cardimg", alt: "botanimate"%>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title card-header"><b>GPT-3 / Twilio chatbot</b></h5>
+            <p class="card-text">Using the <b>OpenAI GPT model</b> and <b>Twilio SMS</b> in conjunction with Python to create an AI text-bot </p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <%= link_to projects_reader_path, class: "link" do %>
+      <div class="col">
+        <!-- FLUTTER EBOOK PROJECT CARD-->
+        <div class="card hidden bg-dark border-secondary">
+          <div class="image-wrapper">
+            <%= image_tag "https://www.thames-exams.co.uk/wp-content/uploads/2018/01/Placeholder.png", class: "cardimg", alt: "readerhover", id: "readerimg"%>
+            <%= image_tag "project-cards/card5.png", class: "cardimg", alt: "readeranimate"%>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title card-header"><b>Flutter E-Book app</b></h5>
+            <p class="card-text">A <b>Flutter</b> approach to <b>cross-platform</b> mobile development, showcased via an E-Book reader app</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
