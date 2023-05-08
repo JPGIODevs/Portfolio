@@ -1,4 +1,10 @@
 @media (min-width: 425px){
+  .desktop{
+    display: block;
+  }
+  .mobile{
+    display: none;
+  } 
   .contacts-icon{
     width: 8%;
     padding: 0 25px 0;
@@ -6,6 +12,13 @@
 }
 
 @media (max-width: 425px){
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  
   .contacts-icon{
     width: 20%;
     padding: 0 15px 0;

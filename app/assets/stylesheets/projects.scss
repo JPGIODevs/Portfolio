@@ -1,9 +1,57 @@
-.projectpic{
+@media (min-width: 425px){
+  .desktop{
+    display: block;
+  }
+  .mobile{
+    display: none;
+  }
+  .projectpic{
     vertical-align: middle;
     height:60vh;
     object-fit: cover;
     animation: fadeIn 2.5s ease;
+  }
+  .giticon{
+    filter: invert(1);
+    height: 10vh;
+  }
+  .exemplarcontainer{
+    width: 50vw;
+  }
+  .projectwebpic{
+    width: 40vw;
+  }
 }
+
+@media (max-width: 425px){
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  .projectpic{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .giticon{
+    filter: invert(1);
+    height: 5vh;
+  }
+  .spacer{
+    margin: 8vh 0 20vh;
+  }
+  .exemplarcontainer{
+    width: 80dvw;
+    height: 100%;
+  }
+  .projectwebpic{
+    width: 80dvw;
+    height: 100%;
+  }
+}
+
 .float-text{
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
     animation: wooshtext 3s alternate-reverse ease infinite;
@@ -23,8 +71,6 @@
 }
 .projectwebpic{
     object-fit: cover;
-    width: 40dvw;
-    height: 100%;
 }
 .leftdiv{
     text-align: left;
@@ -36,14 +82,9 @@
     color: #c0c0c0;
 }
 .exemplarcontainer{
-    width: 50vw;
     margin: auto;
     overflow-y: hidden;
     box-shadow: 0px 0px 15px rgba(255,255,255,0.4);
-}
-.giticon{
-    filter: invert(1);
-    height: 10vh;
 }
 .gitlink:hover{
     color: #6e6e6e;

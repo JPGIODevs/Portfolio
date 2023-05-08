@@ -14,6 +14,9 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
 document.addEventListener("turbo:load", (event) =>{
     console.log("turbo:load, runs every time page loads");
 
