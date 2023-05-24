@@ -10,6 +10,9 @@
   .caro-text{
     font-size: 20px;
   }
+  .latest{
+    width: 60dvw;
+  }
 }
 
 @media (max-width: 425px){
@@ -18,6 +21,9 @@
   }
   .mobile{
     display: block;
+  }
+  .latest{
+    width: 90dvw;
   }
   .about-img{
     position: relative;
@@ -102,7 +108,6 @@
   margin-bottom: 10%;
 }
 .latest{
-  width: 60dvw;
   box-shadow:
   0 0 7px #fff,
   0 0 10px #fff,
