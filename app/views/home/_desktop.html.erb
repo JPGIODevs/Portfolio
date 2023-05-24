@@ -1,7 +1,15 @@
+<!-- LATEST CHANGE SECTION -->
+<div class="latestcontainer hidden left-slide">
+  <h1 class="neontext mb-2">Latest Changes!</h1>
+  <p class="mb-3 pb-4">Click the image to find out more!</p>
+  <%= link_to projects_portfolio_path do %>
+    <%= image_tag "pops.png", class: "latest" %>
+  <% end %>
+</div
 <!-- ABOUT ME SECTION -->
 <!-- DESKTOP VIEW :) -->
 <div class="container pt-3 mt-3 desktop">
-  <h1 class="hidden right-slide sectionheader mb-3 pb-3">About me</h1>
+  <h1 class="hidden neontext right-slide sectionheader mb-3 pb-3">About me</h1>
   <div class='row mt-3 pt-3'>
     <div class="col">
       <%= image_tag "aboutimg.jpg", class: "rounded shadow-lg about-img"%>
@@ -25,7 +33,7 @@
 <!-- DESKTOP VIEW :) -->  
 <div class="container expertise desktop">
   <div class='container exptcontainer'>
-    <h1 class="hidden left-slide sectionheader">Expertise</h1>
+    <h1 class="hidden neontext left-slide sectionheader">Expertise</h1>
     <br/>
   </div>
   <!-- 1st row, names and chonky underlines -->
@@ -100,7 +108,7 @@
 <!-- desktop view :) -->
 <div class="desktop">
   <div class="container hidden right-slide desktop" style="padding-top:35vh;">
-    <h1 class="sectionheader">Projects</h1>
+    <h1 class="neontext sectionheader">Projects</h1>
   </div>
 
   <!-- ROWS FOR PROJECTS SECTION CARDS -->

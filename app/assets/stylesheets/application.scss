@@ -37,6 +37,11 @@ body {
     animation: fadeIn 1s ease;
     overflow-x: hidden;
 }
+.neontext{
+  color: white;
+  text-shadow:
+  0 0 7px #fff, 
+} 
 @keyframes fadeIn{
     0% {opacity: 0;}
     100% {opacity: 1;}
