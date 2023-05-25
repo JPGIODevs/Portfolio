@@ -37,6 +37,10 @@ body {
     animation: fadeIn 1s ease;
     overflow-x: hidden;
 }
+.forward{
+  position: relative;
+  z-index: 4321;
+}
 .neontext{
   color: white;
   text-shadow:
