@@ -81,5 +81,7 @@ gem "dockerfile-rails", ">= 1.2", :group => :development
 
 gem "devise", "~> 4.9"
 
+gem "browser"
+
 #gem "aws-sdk-s3", require: false
 gem 'aws-sdk-s3', '~> 1.121'
