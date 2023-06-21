@@ -1,4 +1,7 @@
 class ProjectsController < ApplicationController
+  def portfolio
+  end
+
   def update_stream
     case params[:pageId]
       when 1
