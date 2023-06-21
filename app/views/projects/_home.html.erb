@@ -1,0 +1,101 @@
+<%= turbo_frame_tag "home" do %>
+  <!-- PROJECTS SECTION -->
+  <div class="container hidden right-slide mt-5 pt-5">
+    <h1 class="sectionheader">Projects</h1>
+  </div>
+
+  <!-- ROWS FOR PROJECTS SECTION CARDS -->
+  <div class="row row-cols-3 row-cols-md-3 g-4 p-5">
+    <%= link_to projects_portfolio_path, class: "link" do %>
+      <div class="col">
+        <!-- RAILS PROJECT CARD -->
+        <div class="card hidden bg-dark border-secondary">
+          <div class="image-wrapper">
+            <%= image_tag "project-cards/hover/card1.gif", class: "cardimg", alt: "rubyhover", id: "rubyimg"%>
+            <%= image_tag "project-cards/card1.png", class: "cardimg", alt: "rubyanimate"%>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title card-header"><b>On-Rails Portfolio</b></h5>
+            <p class="card-text">A ruby-on-rails portfolio, integrating <b>SQLite3</b> and <b>Bootstrap 5</b> to create a response, reactive & scalable personal portfolio.</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+
+    <%= link_to projects_gotasks_path, class: "link" do %>
+      <div class="col">
+        <!-- GO-TASKS PROJECT CARD -->
+        <div class="card hidden bg-dark border-secondary">
+          <div class="image-wrapper">
+            <%= image_tag "project-cards/hover/card2.gif", class: "cardimg", alt: "gohover", id: "goimg"%>
+            <%= image_tag "project-cards/card2.png", class: "cardimg", alt: "goanimate"%>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title card-header"><b>GO Tasks</b></h5>
+            <p class="card-text">A conceptual task-manager and notepad made for cross-platform usage via using the Wails framework with GO (lang)</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <%= link_to projects_manifold_path, class: "link" do %>
+      <div class="col">
+        <!-- Manifold-chat PROJECT CARD -->
+        <div class="card hidden bg-dark border-secondary">
+          <div class="image-wrapper">
+            <%= image_tag "https://www.thames-exams.co.uk/wp-content/uploads/2018/01/Placeholder.png", class: "cardimg", alt: "manifoldhover", id: "manifoldimg"%>
+            <%= image_tag "project-cards/card6.png", class: "cardimg", alt: "manifoldanimate"%>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title card-header"><b>Manifold Chat</b></h5>
+            <p class="card-text">A real-time chat app created using Ruby-on-Rails alongside Hotwire (Turbo-streams), with an Electron desktop-app.</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <%= link_to projects_ps1horror_path, class: "link" do %>
+      <div class="col">
+        <!-- PS1 C# GAME PROJECT CARD -->
+        <div class="card hidden bg-dark border-secondary">
+          <div class="image-wrapper">
+            <%= image_tag "https://www.thames-exams.co.uk/wp-content/uploads/2018/01/Placeholder.png", class: "cardimg", alt: "csharphover", id: "csharpimg"%>
+            <%= image_tag "project-cards/card3.png", class: "cardimg", alt: "csharpanimate"%>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title card-header"><b>PS1-styled C# game</b></h5>
+            <p class="card-text">A short horror game in the style of a Playstation-1 console, Utlising the Unity engine & C#</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <%= link_to projects_twilioAI_path, class: "link" do %>
+      <div class="col">
+        <!-- GPT3/TWILIO SMSBOT PROJECT CARD -->
+        <div class="card hidden bg-dark border-secondary">
+          <div class="image-wrapper">
+            <%= image_tag "https://www.thames-exams.co.uk/wp-content/uploads/2018/01/Placeholder.png", class: "cardimg", alt: "bothover", id: "botimg"%>
+            <%= image_tag "project-cards/card4.png", class: "cardimg", alt: "botanimate"%>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title card-header"><b>GPT-3 / Twilio chatbot</b></h5>
+            <p class="card-text">Using the <b>OpenAI GPT model</b> and <b>Twilio SMS</b> in conjunction with Python to create an AI text-bot </p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <%= link_to projects_reader_path, class: "link" do %>
+      <div class="col">
+        <!-- FLUTTER EBOOK PROJECT CARD-->
+        <div class="card hidden bg-dark border-secondary">
+          <div class="image-wrapper">
+            <%= image_tag "https://www.thames-exams.co.uk/wp-content/uploads/2018/01/Placeholder.png", class: "cardimg", alt: "readerhover", id: "readerimg"%>
+            <%= image_tag "project-cards/card5.png", class: "cardimg", alt: "readeranimate"%>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title card-header"><b>Flutter E-Book app</b></h5>
+            <p class="card-text">A <b>Flutter</b> approach to <b>cross-platform</b> mobile development, showcased via an E-Book reader app</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>
