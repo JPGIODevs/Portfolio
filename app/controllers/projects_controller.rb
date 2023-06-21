@@ -8,4 +8,6 @@ class ProjectsController < ApplicationController
         replace_stream("placeholder", "projects/home")
       when 2 
         replace_stream("portfolio", "projects")
+    end
+  end
 end
