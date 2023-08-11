@@ -9,7 +9,7 @@
 
     <!-- LIST OF FETCHED BLOG ARTICLES FROM POSTGRES DATABASE -->
     <ul>
-        <% @articles.each do |article| %>
+        <% @articles.reverse.each do |article| %>
             <% unless article.archived? %>
                 <li>
                     <%if article.cover_image.present? %>
