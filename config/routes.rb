@@ -11,9 +11,9 @@ Rails.application.routes.draw do
   get 'projects/portfolio'
   get 'projects/placeholder'
   #unfinishing projects :) route as needed
-  get 'projects/manifold' => redirect("projects/placeholder")
+  get 'projects/wrongrail' => redirect("projects/placeholder")
   get 'projects/gotasks' => redirect("projects/placeholder")
-  get 'projects/ps1horror' => redirect("projects/placeholder")
+  get 'projects/ashleys' => redirect("projects/placeholder")
   get 'projects/twilioAI' => redirect("projects/placeholder")
   get 'projects/reader' => redirect("projects/placeholder")
 #home app
