@@ -24,4 +24,6 @@ Rails.application.routes.draw do
 #blogs app
   get 'articles/', to: "articles#index"
   get 'articles/:id', to: "articles#show"
+#specials app
+  get 'specials/shemdog'
 end
